@@ -23,11 +23,11 @@ OBJECTS = $(SOURCES:.c=.o)
 
 # link programs
 $(TARGET): $(OBJECTS)
-	gcc $^ -o $@ $(LDFLAGS)
+	cmake $^ -o $@ $(LDFLAGS)
 	
 # compile
 %.o : %.c
-	gcc $(CFLAGS) -c -o $@ $<
+	cmake $(CFLAGS) -c -o $@ $<
 
 # cleaning
 clean:
