@@ -1,0 +1,7 @@
+{
+  "scripts": {
+    "docker:build": "sudo docker build -t u12.04 .",
+    "docker:run": "sudo docker run -it --rm -v/home/student/bergkvist/buildroot:/folder:rw -v vartmp:/var/tmp/:rw u12.04",
+    "docker": "(npm run docker:build) && (npm run docker:run)"
+  }
+}

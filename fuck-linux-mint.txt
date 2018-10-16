@@ -1,0 +1,42 @@
+
+# This is how you get stuff done in Ubuntu Xenial (16.04)
+# (Fuck Linux Mint/Ubuntu 12)
+
+sudo apt-get install \
+	bison \
+	flex \
+	makeinfo \
+	subversion \
+	gcc-4.7
+
+# Set gcc version to 4.7:
+sudo rm /usr/bin/gcc
+sudo ln -s /usr/bin/gcc-4.7 /usr/bin/gcc
+
+############################
+# TexInfo 4.13 from source #
+############################
+wget http://ftp.gnu.org/gnu/texinfo/texinfo-4.13.tar.gz
+gzip -dc < texinfo-4.13.tar.gz | tar -xf -
+cd texinfo-4.13
+./configure
+make
+sudo make install
+
+#########################
+# Make 3.81 from source #
+#########################
+wget https://ftp.gnu.org/gnu/make/make-3.81.tar.gz
+gzip -dc < make-3.81.tar.gz | tar -xf -
+cd make-3.81
+./configure
+make
+sudo make install
+hash -r make
+make --version
+
+###########################
+# RESTORING LAW AND ORDER #
+###########################
+[~/bergkivst/make-3.81] $ sudo make uninstall && hash -r make
+[*] $ sudo rm /usr/bin/gcc && sudo ln -s /usr/bin/gcc-5 /usr/bin/gcc
