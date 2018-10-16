@@ -1,0 +1,183 @@
+#include <native/task.h>
+#include <native/timer.h>
+#include <sys/mman.h>
+#include <rtdk.h>
+#include <native/sem.h>
+#include <native/mutex.h>
+
+#define TEST_THREAD_COUNT 2
+#define ONE_HUNDRED_MS 100000000  // (in ns)
+
+RT_SEM sem;
+RT_SEM resource;
+RT_MUTEX resourceC;
+
+void busy_wait_us(unsigned long delay){
+	for(;delay > 0; delay--){
+		rt_timer_spin(1000);
+	}
+}
+
+void fnA(void* args) {
+	rt_sem_p(&sem, TM_INFINITE);
+	
+    int *ptr = (int*)args;
+    int taskNumber = *ptr;
+    rt_printf("%d\n", taskNumber);
+	
+	rt_sem_v(&sem);
+   
+}
+
+void fnB(void* args) {
+    int *ptr = (int*)args;
+    int taskNumber = *ptr;
+	
+	rt_sem_p(&sem, TM_INFINITE);
+
+	if(taskNumber == 1){
+		rt_sem_p(&resource, TM_INFINITE);	
+
+		rt_printf("busy_wait_start (%d)\n", taskNumber);	
+		busy_wait_us(3000);
+		rt_printf("busy_wait_end (%d)\n", taskNumber);
+
+		rt_sem_v(&resource);	
+	
+		
+   
+	} else if (taskNumber == 2){
+		rt_task_sleep(1000000); //nanoseconds
+	
+		rt_printf("busy_wait_start (%d)\n", taskNumber);
+		busy_wait_us(5000);
+		rt_printf("busy_wait_end (%d)\n", taskNumber);
+
+	} else if (taskNumber == 3){
+		rt_task_sleep(2000000); //nanoseconds
+		
+		rt_sem_p(&resource, TM_INFINITE);
+	
+		rt_printf("busy_wait_start (%d)\n", taskNumber);
+		busy_wait_us(2000);
+		rt_printf("busy_wait_end (%d)\n", taskNumber);
+
+		rt_sem_v(&resource);
+	
+	}
+}
+
+void fnC(void* args) {
+    int *ptr = (int*)args;
+    int taskNumber = *ptr;
+	
+	rt_sem_p(&sem, TM_INFINITE);
+
+	if(taskNumber == 1){
+		rt_mutex_acquire(&resourceC, TM_INFINITE);	
+
+		rt_printf("busy_wait_start (%d)\n", taskNumber);	
+		busy_wait_us(3000);
+		rt_printf("busy_wait_end (%d)\n", taskNumber);
+
+		rt_mutex_release(&resourceC);	
+	
+		
+   
+	} else if (taskNumber == 2){
+		rt_task_sleep(1000000); //nanoseconds
+	
+		rt_printf("busy_wait_start (%d)\n", taskNumber);
+		busy_wait_us(5000);
+		rt_printf("busy_wait_end (%d)\n", taskNumber);
+
+	} else if (taskNumber == 3){
+		rt_task_sleep(2000000); //nanoseconds
+		
+		rt_mutex_acquire(&resourceC, TM_INFINITE);	
+	
+		rt_printf("busy_wait_start (%d)\n", taskNumber);
+		busy_wait_us(2000);
+		rt_printf("busy_wait_end (%d)\n", taskNumber);
+
+		rt_mutex_release(&resourceC);	
+	
+	}
+}
+
+
+
+void taskA (void) {
+	rt_task_shadow(NULL, 0, 50, T_CPU(1));
+
+    int taskNumbers[] = {1,2};
+
+    RT_TASK task[TEST_THREAD_COUNT];	
+	rt_sem_create(&sem, NULL, 0, S_FIFO);
+
+    for (int taskNumber = 0; taskNumber < TEST_THREAD_COUNT; taskNumber++) {
+        rt_task_create(&task[taskNumber], NULL, 0, 50, T_CPU(1));
+        rt_task_start(&task[taskNumber], &fnA, &taskNumbers[taskNumber]);
+    }   
+
+	rt_task_sleep(ONE_HUNDRED_MS);
+	rt_sem_broadcast(&sem);
+	rt_task_sleep(ONE_HUNDRED_MS);
+	rt_sem_delete(&sem);
+	
+    printf("DONE (taskA)\n");
+}
+
+void taskB (void) {
+	rt_task_shadow(NULL, 0, 50, T_CPU(1));
+
+    int taskNumbers[] = {1,2,3};
+	int taskPriorities[] = {50,60,70};
+
+    RT_TASK task[3];
+	rt_sem_create(&sem, NULL, 0, S_PRIO);
+	rt_sem_create(&resource, NULL, 1, S_FIFO);
+
+	for (int i = 0; i < 3; i++) {
+		rt_task_create(&task[i], NULL, 0, taskPriorities[i], T_CPU(1) | T_JOINABLE);
+		rt_task_start(&task[i], &fnB, &taskNumbers[i]);
+	}
+
+	rt_task_sleep(ONE_HUNDRED_MS);
+	rt_sem_broadcast(&sem);
+	rt_task_sleep(ONE_HUNDRED_MS);
+	rt_sem_delete(&sem);
+	
+    printf("DONE (taskB)\n");
+}
+
+void taskC (void) {
+	rt_task_shadow(NULL, 0, 50, T_CPU(1));
+
+    int taskNumbers[] = {1,2,3};
+	int taskPriorities[] = {50,60,70};
+
+    RT_TASK task[3];
+	rt_sem_create(&sem, NULL, 0, S_PRIO);
+	rt_mutex_create(&resourceC, NULL);
+
+	for (int i = 0; i < 3; i++) {
+		rt_task_create(&task[i], NULL, 0, taskPriorities[i], T_CPU(1) | T_JOINABLE);
+		rt_task_start(&task[i], &fnC, &taskNumbers[i]);
+	}
+
+	rt_task_sleep(ONE_HUNDRED_MS);
+	rt_sem_broadcast(&sem);
+	rt_task_sleep(ONE_HUNDRED_MS);
+	rt_sem_delete(&sem);
+	
+    printf("DONE (taskC)\n");
+}
+
+
+int main() {
+    mlockall(MCL_CURRENT|MCL_FUTURE);
+	rt_print_auto_init(1);
+	
+	taskC();
+}

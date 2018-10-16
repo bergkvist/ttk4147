@@ -1,0 +1,124 @@
+#include <native/task.h>
+#include <native/timer.h>
+#include <sys/mman.h>
+#include <rtdk.h>
+#include <native/sem.h>
+#include <native/mutex.h>
+
+#define ONE_HUNDRED_MS 100000000  // (in ns)
+#define TASK_HIGH_PRIORITY 60
+#define TASK_LOW_PRIORITY 50
+
+RT_SEM sem;
+RT_SEM resource;
+RT_MUTEX resourceA;
+RT_MUTEX resourceB;
+RT_TASK taskHigh;
+RT_TASK taskLow;
+
+void busy_wait_us(unsigned long delay){
+	for(;delay > 0; delay--){
+		rt_timer_spin(1000);
+	}
+}
+
+void fnLow(void* args) {
+    int *ptr = (int*)args;
+    int taskNumber = *ptr;
+
+	rt_sem_p(&sem, TM_INFINITE);
+	
+	rt_task_set_priority(NULL, TASK_HIGH_PRIORITY);
+	rt_mutex_acquire(&resourceA, TM_INFINITE);
+
+	rt_printf("first busy_wait_start task(%d)\n", taskNumber);	
+	busy_wait_us(3000);
+	rt_printf("first busy_wait_end task(%d)\n", taskNumber);
+
+
+	
+	rt_mutex_acquire(&resourceB, TM_INFINITE);
+	
+
+	rt_printf("second busy_wait_start task(%d)\n", taskNumber);	
+	busy_wait_us(3000);
+	rt_printf("second busy_wait_end task(%d)\n", taskNumber);	
+
+	rt_mutex_release(&resourceB);
+	rt_mutex_release(&resourceA);
+	
+	rt_printf("last busy_wait_start task(%d)\n", taskNumber);	
+	busy_wait_us(1000);
+	rt_printf("last busy_wait_end task(%d)\n", taskNumber);
+	
+	//RESET PRIORITIES TO ORIGINAL
+	rt_task_set_priority(NULL, TASK_LOW_PRIORITY);
+}
+
+void fnHigh(void* args) {
+
+    int *ptr = (int*)args;
+    int taskNumber = *ptr;
+
+	rt_sem_p(&sem, TM_INFINITE);
+
+	rt_task_sleep(1000000); // 1 ms in ns
+
+	rt_mutex_acquire(&resourceB, TM_INFINITE);
+
+	rt_printf("first busy_wait_start task(%d)\n", taskNumber);	
+	busy_wait_us(1000);
+	rt_printf("first busy_wait_end task(%d)\n", taskNumber);
+	rt_mutex_acquire(&resourceA, TM_INFINITE);
+
+
+	rt_printf("second busy_wait_start task(%d)\n", taskNumber);	
+	busy_wait_us(2000);
+	rt_printf("second busy_wait_end task(%d)\n", taskNumber);	
+
+	rt_mutex_release(&resourceA);
+	rt_mutex_release(&resourceB);
+
+
+	rt_printf("last busy_wait_start task(%d)\n", taskNumber);	
+	busy_wait_us(1000);
+	rt_printf("last busy_wait_end task(%d)\n", taskNumber);	 
+
+}
+
+
+
+void taskD (void) {
+	rt_task_shadow(NULL, 0, 50, T_CPU(1));
+
+    int taskNumbers[] = {1,2};
+
+	rt_mutex_create(&resourceA, "mutexA");
+	rt_mutex_create(&resourceB, "mutexB");
+	
+	rt_sem_create(&sem, NULL, 0, S_FIFO);
+	
+
+    rt_task_create(&taskLow, NULL, 0, TASK_LOW_PRIORITY, T_CPU(1) | T_JOINABLE);
+    rt_task_start(&taskLow, &fnLow, &taskNumbers[0]);
+
+    rt_task_create(&taskHigh, NULL, 0, TASK_HIGH_PRIORITY, T_CPU(1));
+    rt_task_start(&taskHigh, &fnHigh, &taskNumbers[1]);
+
+	rt_task_sleep(ONE_HUNDRED_MS);
+	rt_sem_broadcast(&sem);
+
+	rt_task_join(&taskLow);	
+
+	rt_task_sleep(ONE_HUNDRED_MS);
+	rt_sem_delete(&sem);
+	
+    printf("DONE (taskD)\n");
+}
+
+int main() {
+    mlockall(MCL_CURRENT|MCL_FUTURE);
+	rt_print_auto_init(1);
+	
+	taskD();
+}
