@@ -1,0 +1,1047 @@
+Dec 31 17:00:47 ngw syslog.info syslogd started: BusyBox v1.17.1
+Dec 31 17:00:47 ngw user.notice kernel: klogd started: BusyBox v1.17.1 (2018-10-15 15:01:46 CEST)
+Dec 31 17:00:47 ngw user.notice kernel: Linux version 2.6.35.4 (student@Sanntid) (gcc version 4.2.4-atmel.1.1.3.avr32linux.1) #1 Mon Oct 15 15:07:41 CEST 2018
+Dec 31 17:00:47 ngw user.warn kernel: CPU: AT32AP700x chip revision C
+Dec 31 17:00:47 ngw user.warn kernel: CPU: AP7 [01] core revision 0 (AVR32B arch revision 1)
+Dec 31 17:00:47 ngw user.warn kernel: CPU: MMU configuration: Shared TLB
+Dec 31 17:00:47 ngw user.warn kernel: CPU: features: dsp simd ocd perfctr java
+Dec 31 17:00:47 ngw user.warn kernel: CPU: Running at 140.000 MHz
+Dec 31 17:00:47 ngw user.info kernel: Physical memory:
+Dec 31 17:00:47 ngw user.warn kernel:   10000000-11ffffff
+Dec 31 17:00:47 ngw user.info kernel: Reserved memory:
+Dec 31 17:00:47 ngw user.warn kernel:   10000000-101c87eb: Kernel code
+Dec 31 17:00:47 ngw user.warn kernel:   101c87ec-1028061f: Kernel data
+Dec 31 17:00:47 ngw user.debug kernel: On node 0 totalpages: 8192
+Dec 31 17:00:47 ngw user.debug kernel: free_area_init_node: node 0, pgdat 9026d928, node_mem_map 90283000
+Dec 31 17:00:47 ngw user.debug kernel:   Normal zone: 64 pages used for memmap
+Dec 31 17:00:47 ngw user.debug kernel:   Normal zone: 0 pages reserved
+Dec 31 17:00:47 ngw user.debug kernel:   Normal zone: 8128 pages, LIFO batch:0
+Dec 31 17:00:47 ngw user.warn kernel: Node 0: mem_map starts at 90283000
+Dec 31 17:00:47 ngw user.notice kernel: Kernel command line: root=/dev/nfs nfsroot=192.168.0.1:/export/nfs ip=dhcp console=ttyS0
+Dec 31 17:00:47 ngw daemon.info dnsmasq[399]: started, version 2.55 cachesize 150
+Dec 31 17:00:47 ngw user.info kernel: PID hash table entries: 128 (order: -3, 512 bytes)
+Dec 31 17:00:47 ngw user.info kernel: Dentry cache hash table entries: 4096 (order: 2, 16384 bytes)
+Dec 31 17:00:47 ngw user.info kernel: Inode-cache hash table entries: 2048 (order: 1, 8192 bytes)
+Dec 31 17:00:47 ngw daemon.warn dnsmasq[399]: overflow: 6 log entries lost
+Dec 31 17:00:47 ngw user.warn kernel: Memory: 29916k/29916k available (1741k kernel code, 2852k reserved, 148k data, 84k init)
+Dec 31 17:00:47 ngw user.info kernel: SLUB: Genslabs=11, HWalign=32, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+Dec 31 17:00:47 ngw user.info kernel: Hierarchical RCU implementation.
+Dec 31 17:00:47 ngw user.info kernel: 	RCU-based detection of stalled CPUs is disabled.
+Dec 31 17:00:47 ngw user.info kernel: 	Verbose stalled-CPUs detection is disabled.
+Dec 31 17:00:47 ngw user.info kernel: NR_IRQS:288
+Dec 31 17:00:47 ngw user.info kernel: avr32_comparator: irq 0, 140.000 MHz
+Dec 31 17:00:47 ngw user.info kernel: console [ttyS0] enabled
+Dec 31 17:00:47 ngw user.info kernel: Calibrating delay using timer specific routine.. 285.99 BogoMIPS (lpj=142997)
+Dec 31 17:00:47 ngw user.info kernel: pid_max: default: 4096 minimum: 301
+Dec 31 17:00:47 ngw user.warn kernel: Mount-cache hash table entries: 512
+Dec 31 17:00:47 ngw user.info kernel: smc smc.0: Atmel Static Memory Controller at 0xfff03400
+Dec 31 17:00:47 ngw user.info kernel: NET: Registered protocol family 16
+Dec 31 17:00:47 ngw user.debug kernel: pio0: base 0xffe02800, irq 13 chains 96..127
+Dec 31 17:00:47 ngw user.debug kernel: pio1: base 0xffe02c00, irq 14 chains 128..159
+Dec 31 17:00:47 ngw user.debug kernel: pio2: base 0xffe03000, irq 15 chains 160..191
+Dec 31 17:00:47 ngw user.debug kernel: pio3: base 0xffe03400, irq 16 chains 192..223
+Dec 31 17:00:47 ngw user.debug kernel: pio4: base 0xffe03800, irq 17 chains 224..255
+Dec 31 17:00:47 ngw user.info kernel: pdc pdc.0: Atmel Peripheral DMA Controller enabled
+Dec 31 17:00:47 ngw user.info kernel: at32_eic at32_eic.0: External Interrupt Controller at 0xfff00100, IRQ 19
+Dec 31 17:00:47 ngw user.info kernel: at32_eic at32_eic.0: Handling 4 external IRQs, starting with IRQ 64
+Dec 31 17:00:47 ngw user.warn kernel: AVR32 AP Power Management enabled
+Dec 31 17:00:47 ngw user.debug kernel: tcb_clksrc: tc0 at 8.250 MHz
+Dec 31 17:00:47 ngw user.warn kernel: bio: create slab <bio-0> at 0
+Dec 31 17:00:47 ngw user.info kernel: Switching to clocksource tcb_clksrc
+Dec 31 17:00:47 ngw user.info kernel: NET: Registered protocol family 2
+Dec 31 17:00:47 ngw user.info kernel: IP route cache hash table entries: 1024 (order: 0, 4096 bytes)
+Dec 31 17:00:47 ngw user.info kernel: TCP established hash table entries: 1024 (order: 1, 8192 bytes)
+Dec 31 17:00:47 ngw user.info kernel: TCP bind hash table entries: 1024 (order: 0, 4096 bytes)
+Dec 31 17:00:47 ngw user.info kernel: TCP: Hash tables configured (established 1024 bind 1024)
+Dec 31 17:00:47 ngw user.info kernel: TCP reno registered
+Dec 31 17:00:47 ngw user.info kernel: NET: Registered protocol family 1
+Dec 31 17:00:47 ngw user.info kernel: RPC: Registered udp transport module.
+Dec 31 17:00:47 ngw user.info kernel: RPC: Registered tcp transport module.
+Dec 31 17:00:47 ngw user.info kernel: RPC: Registered tcp NFSv4.1 backchannel transport module.
+Dec 31 17:00:47 ngw user.info kernel: JFFS2 version 2.2. (NAND) © 2001-2006 Red Hat, Inc.
+Dec 31 17:00:47 ngw user.info kernel: msgmni has been set to 58
+Dec 31 17:00:47 ngw user.info kernel: alg: No test for stdrng (krng)
+Dec 31 17:00:47 ngw user.info kernel: io scheduler noop registered
+Dec 31 17:00:47 ngw user.info kernel: io scheduler cfq registered (default)
+Dec 31 17:00:47 ngw user.info kernel: atmel_usart.0: ttyS0 at MMIO 0xffe01000 (irq = 7) is a ATMEL_SERIAL
+Dec 31 17:00:47 ngw user.notice kernel: physmap platform flash device: 00800000 at 00000000
+Dec 31 17:00:47 ngw user.info kernel: physmap-flash.0: Found 1 x16 devices at 0x0 in 16-bit bank
+Dec 31 17:00:47 ngw user.info kernel: Amd/Fujitsu Extended Query Table at 0x0041
+Dec 31 17:00:47 ngw user.notice kernel: number of CFI chips: 1
+Dec 31 17:00:47 ngw user.notice kernel: RedBoot partition parsing not available
+Dec 31 17:00:47 ngw user.notice kernel: Using physmap partition information
+Dec 31 17:00:47 ngw user.notice kernel: Creating 3 MTD partitions on "physmap-flash.0":
+Dec 31 17:00:47 ngw user.notice kernel: 0x000000000000-0x000000020000 : "u-boot"
+Dec 31 17:00:47 ngw user.notice kernel: 0x000000020000-0x0000007f0000 : "root"
+Dec 31 17:00:47 ngw user.notice kernel: 0x0000007f0000-0x000000800000 : "env"
+Dec 31 17:00:47 ngw user.info kernel: atmel_spi atmel_spi.0: Atmel SPI Controller at 0xffe00000 (irq 3)
+Dec 31 17:00:47 ngw user.info kernel: mtd_dataflash spi0.0: AT45DB642x (8448 KBytes) pagesize 1056 bytes (OTP)
+Dec 31 17:00:47 ngw user.info kernel: MACB_mii_bus: probed
+Dec 31 17:00:47 ngw user.info kernel: eth0: Atmel MACB at 0xfff01800 irq 25 (00:11:22:33:44:55)
+Dec 31 17:00:47 ngw user.info kernel: eth0: attached PHY driver [Generic PHY] (mii_bus:phy_addr=0:01, irq=-1)
+Dec 31 17:00:47 ngw user.info kernel: macb macb.1: invalid hw address, using random
+Dec 31 17:00:47 ngw user.info kernel: MACB_mii_bus: probed
+Dec 31 17:00:47 ngw user.info kernel: eth1: Atmel MACB at 0xfff01c00 irq 26 (32:65:f5:5f:37:5b)
+Dec 31 17:00:47 ngw user.info kernel: eth1: attached PHY driver [Generic PHY] (mii_bus:phy_addr=1:03, irq=-1)
+Dec 31 17:00:47 ngw user.info kernel: atmel_usba_udc atmel_usba_udc.0: MMIO registers at 0xfff03000 mapped at fff03000
+Dec 31 17:00:47 ngw user.info kernel: atmel_usba_udc atmel_usba_udc.0: FIFO at 0xff300000 mapped at ff300000
+Dec 31 17:00:47 ngw user.info kernel: at32ap700x_rtc at32ap700x_rtc.0: rtc core: registered at32ap700x_rtc as rtc0
+Dec 31 17:00:47 ngw user.info kernel: at32ap700x_rtc at32ap700x_rtc.0: Atmel RTC for AT32AP700x at fff00080 irq 21
+Dec 31 17:00:47 ngw user.info kernel: at32_wdt at32_wdt.0: AT32AP700X WDT at 0xfff000b0, timeout 2 sec (nowayout=0)
+Dec 31 17:00:47 ngw user.debug kernel: Registered led device: sys
+Dec 31 17:00:47 ngw user.debug kernel: Registered led device: a
+Dec 31 17:00:47 ngw user.debug kernel: Registered led device: b
+Dec 31 17:00:47 ngw user.info kernel: dw_dmac.0: DesignWare DMA Controller, 3 channels
+Dec 31 17:00:47 ngw user.info kernel: TCP cubic registered
+Dec 31 17:00:47 ngw user.info kernel: Initializing XFRM netlink socket
+Dec 31 17:00:47 ngw user.info kernel: NET: Registered protocol family 10
+Dec 31 17:00:47 ngw user.info kernel: IPv6 over IPv4 tunneling driver
+Dec 31 17:00:47 ngw user.info kernel: NET: Registered protocol family 17
+Dec 31 17:00:47 ngw user.info kernel: NET: Registered protocol family 15
+Dec 31 17:00:47 ngw user.warn kernel: cpufreq: AT32AP CPU frequency driver
+Dec 31 17:00:47 ngw user.info kernel: at32ap700x_rtc at32ap700x_rtc.0: setting system clock to 1970-01-01 00:00:00 UTC (0)
+Dec 31 17:00:47 ngw user.info kernel: atmel_mci atmel_mci.0: Atmel MCI controller at 0xfff02400 irq 28, 1 slots
+Dec 31 17:00:47 ngw user.notice kernel: Sending DHCP requests ., OK
+Dec 31 17:00:47 ngw user.warn kernel: IP-Config: Got DHCP answer from 192.168.0.1, my address is 192.168.0.16
+Dec 31 17:00:47 ngw user.warn kernel: IP-Config: Complete:
+Dec 31 17:00:47 ngw user.warn kernel:      device=eth0, addr=192.168.0.16, mask=255.255.255.0, gw=192.168.0.1,
+Dec 31 17:00:47 ngw user.warn kernel:      host=192.168.0.16, domain=example.org, nis-domain=(none),
+Dec 31 17:00:47 ngw user.warn kernel:      bootserver=192.168.0.1, rootserver=192.168.0.1, rootpath=
+Dec 31 17:00:47 ngw user.notice kernel: Looking up port of RPC 100003/2 on 192.168.0.1
+Dec 31 17:00:47 ngw user.notice kernel: Looking up port of RPC 100005/1 on 192.168.0.1
+Dec 31 17:00:47 ngw user.warn kernel: VFS: Mounted root (nfs filesystem) on device 0:13.
+Dec 31 17:00:47 ngw user.info kernel: Freeing init memory: 84K (90000000 - 90015000)
+Dec 31 17:00:47 ngw user.info kernel: eth0: link up (100/Full)
+Dec 31 17:00:47 ngw user.info kernel: usb0: MAC a2:9e:e1:56:9c:f4
+Dec 31 17:00:47 ngw user.info kernel: usb0: HOST MAC 0a:9c:46:a8:42:2d
+Dec 31 17:00:47 ngw user.info kernel: g_cdc gadget: CDC Composite Gadget, version: King Kamehameha Day 2008
+Dec 31 17:00:47 ngw user.info kernel: g_cdc gadget: g_cdc ready
+Dec 31 17:00:47 ngw user.info kernel: ADDRCONF(NETDEV_UP): eth1: link is not ready
+Dec 31 17:00:47 ngw user.info kernel: ADDRCONF(NETDEV_UP): usb0: link is not ready
+Dec 31 17:00:47 ngw user.info kernel: ip_tables: (C) 2000-2006 Netfilter Core Team
+Dec 31 17:00:47 ngw user.warn kernel: iptable_nat: Unknown symbol nf_conntrack_untracked (err 0)
+Dec 31 17:00:47 ngw user.warn kernel: iptable_nat: Unknown symbol nf_nat_packet (err 0)
+Dec 31 17:00:47 ngw user.warn kernel: iptable_nat: Unknown symbol __nf_ct_ext_add (err 0)
+Dec 31 17:00:47 ngw user.warn kernel: iptable_nat: Unknown symbol nf_nat_setup_info (err 0)
+Dec 31 17:00:47 ngw user.warn kernel: iptable_nat: Unknown symbol nf_nat_icmp_reply_translation (err 0)
+Dec 31 17:00:47 ngw user.warn kernel: iptable_nat: Unknown symbol need_ipv4_conntrack (err 0)
+Dec 31 17:00:47 ngw user.info kernel: nf_conntrack version 0.5.0 (468 buckets, 1872 max)
+Dec 31 17:00:47 ngw user.debug kernel: eth0: no IPv6 routers present
+Dec 31 17:00:47 ngw user.info kernel: warning: `proftpd' uses 32-bit capabilities (legacy support in use)
+Dec 31 17:00:09 ngw syslog.info syslogd started: BusyBox v1.17.1
+Dec 31 17:00:09 ngw user.notice kernel: klogd started: BusyBox v1.17.1 (2018-10-15 15:01:46 CEST)
+Dec 31 17:00:09 ngw user.notice kernel: Linux version 2.6.35.4 (student@Sanntid) (gcc version 4.2.4-atmel.1.1.3.avr32linux.1) #1 Mon Oct 15 15:07:41 CEST 2018
+Dec 31 17:00:09 ngw user.warn kernel: CPU: AT32AP700x chip revision C
+Dec 31 17:00:09 ngw user.warn kernel: CPU: AP7 [01] core revision 0 (AVR32B arch revision 1)
+Dec 31 17:00:09 ngw user.warn kernel: CPU: MMU configuration: Shared TLB
+Dec 31 17:00:09 ngw user.warn kernel: CPU: features: dsp simd ocd perfctr java
+Dec 31 17:00:09 ngw user.warn kernel: CPU: Running at 140.000 MHz
+Dec 31 17:00:09 ngw user.info kernel: Physical memory:
+Dec 31 17:00:09 ngw user.warn kernel:   10000000-11ffffff
+Dec 31 17:00:09 ngw user.info kernel: Reserved memory:
+Dec 31 17:00:09 ngw user.warn kernel:   10000000-101c87eb: Kernel code
+Dec 31 17:00:09 ngw user.warn kernel:   101c87ec-1028061f: Kernel data
+Dec 31 17:00:09 ngw user.warn kernel: Exception vectors start at 90015000
+Dec 31 17:00:09 ngw user.warn kernel: CPU: Paging enabled
+Dec 31 17:00:09 ngw user.warn kernel: Node 0: start_pfn = 0x10000, low = 0x12000
+Dec 31 17:00:09 ngw user.debug kernel: On node 0 totalpages: 8192
+Dec 31 17:00:09 ngw user.debug kernel: free_area_init_node: node 0, pgdat 9026d928, node_mem_map 90283000
+Dec 31 17:00:09 ngw daemon.info dnsmasq[376]: started, version 2.55 cachesize 150
+Dec 31 17:00:09 ngw user.debug kernel:   Normal zone: 64 pages used for memmap
+Dec 31 17:00:09 ngw user.debug kernel:   Normal zone: 0 pages reserved
+Dec 31 17:00:09 ngw daemon.warn dnsmasq[376]: overflow: 6 log entries lost
+Dec 31 17:00:09 ngw user.debug kernel:   Normal zone: 8128 pages, LIFO batch:0
+Dec 31 17:00:09 ngw user.warn kernel: Node 0: mem_map starts at 90283000
+Dec 31 17:00:09 ngw user.warn kernel: Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 8128
+Dec 31 17:00:09 ngw user.notice kernel: Kernel command line: root=/dev/nfs nfsroot=192.168.0.1:/export/nfs ip=dhcp console=ttyS0
+Dec 31 17:00:09 ngw user.info kernel: PID hash table entries: 128 (order: -3, 512 bytes)
+Dec 31 17:00:09 ngw user.info kernel: Dentry cache hash table entries: 4096 (order: 2, 16384 bytes)
+Dec 31 17:00:09 ngw user.info kernel: Inode-cache hash table entries: 2048 (order: 1, 8192 bytes)
+Dec 31 17:00:09 ngw user.warn kernel: Memory: 29916k/29916k available (1741k kernel code, 2852k reserved, 148k data, 84k init)
+Dec 31 17:00:09 ngw user.info kernel: SLUB: Genslabs=11, HWalign=32, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+Dec 31 17:00:09 ngw user.info kernel: Hierarchical RCU implementation.
+Dec 31 17:00:09 ngw user.info kernel: 	RCU-based detection of stalled CPUs is disabled.
+Dec 31 17:00:09 ngw user.info kernel: 	Verbose stalled-CPUs detection is disabled.
+Dec 31 17:00:09 ngw user.info kernel: NR_IRQS:288
+Dec 31 17:00:09 ngw user.info kernel: avr32_comparator: irq 0, 140.000 MHz
+Dec 31 17:00:09 ngw user.info kernel: console [ttyS0] enabled
+Dec 31 17:00:09 ngw user.info kernel: Calibrating delay using timer specific routine.. 285.98 BogoMIPS (lpj=142994)
+Dec 31 17:00:09 ngw user.info kernel: pid_max: default: 4096 minimum: 301
+Dec 31 17:00:09 ngw user.warn kernel: Mount-cache hash table entries: 512
+Dec 31 17:00:09 ngw user.info kernel: smc smc.0: Atmel Static Memory Controller at 0xfff03400
+Dec 31 17:00:09 ngw user.info kernel: NET: Registered protocol family 16
+Dec 31 17:00:09 ngw user.debug kernel: pio0: base 0xffe02800, irq 13 chains 96..127
+Dec 31 17:00:09 ngw user.debug kernel: pio1: base 0xffe02c00, irq 14 chains 128..159
+Dec 31 17:00:09 ngw user.debug kernel: pio2: base 0xffe03000, irq 15 chains 160..191
+Dec 31 17:00:09 ngw user.debug kernel: pio3: base 0xffe03400, irq 16 chains 192..223
+Dec 31 17:00:09 ngw user.debug kernel: pio4: base 0xffe03800, irq 17 chains 224..255
+Dec 31 17:00:09 ngw user.info kernel: pdc pdc.0: Atmel Peripheral DMA Controller enabled
+Dec 31 17:00:09 ngw user.info kernel: at32_eic at32_eic.0: External Interrupt Controller at 0xfff00100, IRQ 19
+Dec 31 17:00:09 ngw user.info kernel: at32_eic at32_eic.0: Handling 4 external IRQs, starting with IRQ 64
+Dec 31 17:00:09 ngw user.warn kernel: AVR32 AP Power Management enabled
+Dec 31 17:00:09 ngw user.debug kernel: tcb_clksrc: tc0 at 8.250 MHz
+Dec 31 17:00:09 ngw user.warn kernel: bio: create slab <bio-0> at 0
+Dec 31 17:00:09 ngw user.info kernel: Switching to clocksource tcb_clksrc
+Dec 31 17:00:09 ngw user.info kernel: NET: Registered protocol family 2
+Dec 31 17:00:09 ngw user.info kernel: IP route cache hash table entries: 1024 (order: 0, 4096 bytes)
+Dec 31 17:00:10 ngw user.info kernel: TCP established hash table entries: 1024 (order: 1, 8192 bytes)
+Dec 31 17:00:10 ngw user.info kernel: TCP bind hash table entries: 1024 (order: 0, 4096 bytes)
+Dec 31 17:00:10 ngw user.info kernel: TCP: Hash tables configured (established 1024 bind 1024)
+Dec 31 17:00:10 ngw user.info kernel: TCP reno registered
+Dec 31 17:00:10 ngw user.info kernel: NET: Registered protocol family 1
+Dec 31 17:00:10 ngw user.info kernel: RPC: Registered udp transport module.
+Dec 31 17:00:10 ngw user.info kernel: RPC: Registered tcp transport module.
+Dec 31 17:00:10 ngw user.info kernel: RPC: Registered tcp NFSv4.1 backchannel transport module.
+Dec 31 17:00:10 ngw user.info kernel: JFFS2 version 2.2. (NAND) © 2001-2006 Red Hat, Inc.
+Dec 31 17:00:10 ngw user.info kernel: msgmni has been set to 58
+Dec 31 17:00:10 ngw user.info kernel: alg: No test for stdrng (krng)
+Dec 31 17:00:10 ngw user.info kernel: io scheduler noop registered
+Dec 31 17:00:10 ngw user.notice kernel: 0x000000020000-0x0000007f0000 : "root"
+Dec 31 17:00:10 ngw user.notice kernel: 0x0000007f0000-0x000000800000 : "env"
+Dec 31 17:00:10 ngw user.info kernel: atmel_spi atmel_spi.0: Atmel SPI Controller at 0xffe00000 (irq 3)
+Dec 31 17:00:10 ngw user.info kernel: mtd_dataflash spi0.0: AT45DB642x (8448 KBytes) pagesize 1056 bytes (OTP)
+Dec 31 17:00:10 ngw user.info kernel: MACB_mii_bus: probed
+Dec 31 17:00:10 ngw user.info kernel: eth0: Atmel MACB at 0xfff01800 irq 25 (00:11:22:33:44:55)
+Dec 31 17:00:10 ngw user.info kernel: eth0: attached PHY driver [Generic PHY] (mii_bus:phy_addr=0:01, irq=-1)
+Dec 31 17:00:10 ngw user.info kernel: macb macb.1: invalid hw address, using random
+Dec 31 17:00:10 ngw user.info kernel: MACB_mii_bus: probed
+Dec 31 17:00:10 ngw user.info kernel: eth1: Atmel MACB at 0xfff01c00 irq 26 (4a:83:b2:e8:6b:0d)
+Dec 31 17:00:10 ngw user.info kernel: eth1: attached PHY driver [Generic PHY] (mii_bus:phy_addr=1:03, irq=-1)
+Dec 31 17:00:10 ngw user.info kernel: atmel_usba_udc atmel_usba_udc.0: MMIO registers at 0xfff03000 mapped at fff03000
+Dec 31 17:00:10 ngw user.info kernel: atmel_usba_udc atmel_usba_udc.0: FIFO at 0xff300000 mapped at ff300000
+Dec 31 17:00:10 ngw user.info kernel: at32ap700x_rtc at32ap700x_rtc.0: rtc core: registered at32ap700x_rtc as rtc0
+Dec 31 17:00:10 ngw user.info kernel: at32ap700x_rtc at32ap700x_rtc.0: Atmel RTC for AT32AP700x at fff00080 irq 21
+Dec 31 17:00:10 ngw user.info kernel: at32_wdt at32_wdt.0: AT32AP700X WDT at 0xfff000b0, timeout 2 sec (nowayout=0)
+Dec 31 17:00:10 ngw user.debug kernel: Registered led device: sys
+Dec 31 17:00:10 ngw user.debug kernel: Registered led device: a
+Dec 31 17:00:10 ngw user.debug kernel: Registered led device: b
+Dec 31 17:00:10 ngw user.info kernel: dw_dmac.0: DesignWare DMA Controller, 3 channels
+Dec 31 17:00:10 ngw user.info kernel: TCP cubic registered
+Dec 31 17:00:10 ngw user.info kernel: Initializing XFRM netlink socket
+Dec 31 17:00:10 ngw user.info kernel: NET: Registered protocol family 10
+Dec 31 17:00:10 ngw user.info kernel: IPv6 over IPv4 tunneling driver
+Dec 31 17:00:10 ngw user.info kernel: NET: Registered protocol family 17
+Dec 31 17:00:10 ngw user.info kernel: NET: Registered protocol family 15
+Dec 31 17:00:10 ngw user.warn kernel: cpufreq: AT32AP CPU frequency driver
+Dec 31 17:00:10 ngw user.info kernel: at32ap700x_rtc at32ap700x_rtc.0: setting system clock to 1970-01-01 00:00:00 UTC (0)
+Dec 31 17:00:10 ngw user.info kernel: atmel_mci atmel_mci.0: Atmel MCI controller at 0xfff02400 irq 28, 1 slots
+Dec 31 17:00:10 ngw user.notice kernel: Sending DHCP requests .
+Dec 31 17:00:10 ngw user.info kernel: eth1: link up (100/Full)
+Dec 31 17:00:10 ngw user.warn kernel: , OK
+Dec 31 17:00:10 ngw user.warn kernel: IP-Config: Got DHCP answer from 192.168.0.1, my address is 192.168.0.17
+Dec 31 17:00:10 ngw user.warn kernel: IP-Config: Complete:
+Dec 31 17:00:10 ngw user.warn kernel:      device=eth1, addr=192.168.0.17, mask=255.255.255.0, gw=192.168.0.1,
+Dec 31 17:00:10 ngw user.warn kernel:      host=192.168.0.17, domain=example.org, nis-domain=(none),
+Dec 31 17:00:10 ngw user.warn kernel:      bootserver=192.168.0.1, rootserver=192.168.0.1, rootpath=
+Dec 31 17:00:10 ngw user.notice kernel: Looking up port of RPC 100003/2 on 192.168.0.1
+Dec 31 17:00:10 ngw user.notice kernel: Looking up port of RPC 100005/1 on 192.168.0.1
+Dec 31 17:00:10 ngw user.warn kernel: VFS: Mounted root (nfs filesystem) on device 0:13.
+Dec 31 17:00:10 ngw user.info kernel: Freeing init memory: 84K (90000000 - 90015000)
+Dec 31 17:00:10 ngw user.info kernel: usb0: MAC a2:9e:e1:56:9c:f4
+Dec 31 17:00:10 ngw user.info kernel: usb0: HOST MAC 0a:9c:46:a8:42:2d
+Dec 31 17:00:10 ngw user.info kernel: g_cdc gadget: CDC Composite Gadget, version: King Kamehameha Day 2008
+Dec 31 17:00:10 ngw user.info kernel: g_cdc gadget: g_cdc ready
+Dec 31 17:00:10 ngw user.info kernel: ADDRCONF(NETDEV_UP): usb0: link is not ready
+Dec 31 17:00:10 ngw user.info kernel: ADDRCONF(NETDEV_UP): eth0: link is not ready
+Dec 31 17:00:10 ngw user.info kernel: ip_tables: (C) 2000-2006 Netfilter Core Team
+Dec 31 17:00:10 ngw user.info kernel: nf_conntrack version 0.5.0 (468 buckets, 1872 max)
+Dec 31 17:00:10 ngw user.info kernel: warning: `proftpd' uses 32-bit capabilities (legacy support in use)
+Dec 31 17:00:11 ngw user.debug kernel: eth1: no IPv6 routers present
+Dec 31 17:00:13 ngw syslog.info syslogd started: BusyBox v1.17.1
+Dec 31 17:00:13 ngw user.notice kernel: klogd started: BusyBox v1.17.1 (2018-10-15 15:01:46 CEST)
+Dec 31 17:00:14 ngw user.notice kernel: Linux version 2.6.35.4 (student@Sanntid) (gcc version 4.2.4-atmel.1.1.3.avr32linux.1) #1 Mon Oct 15 15:07:41 CEST 2018
+Dec 31 17:00:14 ngw user.warn kernel: CPU: AT32AP700x chip revision C
+Dec 31 17:00:14 ngw user.warn kernel: CPU: AP7 [01] core revision 0 (AVR32B arch revision 1)
+Dec 31 17:00:14 ngw user.warn kernel: CPU: MMU configuration: Shared TLB
+Dec 31 17:00:14 ngw user.warn kernel: CPU: features: dsp simd ocd perfctr java
+Dec 31 17:00:14 ngw user.warn kernel: CPU: Running at 140.000 MHz
+Dec 31 17:00:14 ngw user.info kernel: Physical memory:
+Dec 31 17:00:14 ngw user.warn kernel:   10000000-11ffffff
+Dec 31 17:00:14 ngw user.info kernel: Reserved memory:
+Dec 31 17:00:14 ngw user.warn kernel:   10000000-101c87eb: Kernel code
+Dec 31 17:00:14 ngw user.warn kernel:   101c87ec-1028061f: Kernel data
+Dec 31 17:00:14 ngw user.info kernel: 	RCU-based detection of stalled CPUs is disabled.
+Dec 31 17:00:13 ngw daemon.info dnsmasq[395]: started, version 2.55 cachesize 150
+Dec 31 17:00:14 ngw daemon.warn dnsmasq[395]: overflow: 6 log entries lost
+Dec 31 17:00:14 ngw user.info kernel: TCP: Hash tables configured (established 1024 bind 1024)
+Dec 31 17:00:14 ngw user.info kernel: NET: Registered protocol family 1
+Dec 31 17:00:14 ngw user.info kernel: RPC: Registered udp transport module.
+Dec 31 17:00:14 ngw user.info kernel: RPC: Registered tcp transport module.
+Dec 31 17:00:14 ngw user.info kernel: RPC: Registered tcp NFSv4.1 backchannel transport module.
+Dec 31 17:00:14 ngw user.info kernel: JFFS2 version 2.2. (NAND) © 2001-2006 Red Hat, Inc.
+Dec 31 17:00:14 ngw user.info kernel: alg: No test for stdrng (krng)
+Dec 31 17:00:14 ngw user.info kernel: io scheduler cfq registered (default)
+Dec 31 17:00:14 ngw user.info kernel: atmel_usart.0: ttyS0 at MMIO 0xffe01000 (irq = 7) is a ATMEL_SERIAL
+Dec 31 17:00:14 ngw user.notice kernel: physmap platform flash device: 00800000 at 00000000
+Dec 31 17:00:14 ngw user.info kernel: physmap-flash.0: Found 1 x16 devices at 0x0 in 16-bit bank
+Dec 31 17:00:14 ngw user.info kernel: Amd/Fujitsu Extended Query Table at 0x0041
+Dec 31 17:00:14 ngw user.notice kernel: number of CFI chips: 1
+Dec 31 17:00:14 ngw user.notice kernel: RedBoot partition parsing not available
+Dec 31 17:00:14 ngw user.notice kernel: Using physmap partition information
+Dec 31 17:00:14 ngw user.notice kernel: Creating 3 MTD partitions on "physmap-flash.0":
+Dec 31 17:00:14 ngw user.notice kernel: 0x000000000000-0x000000020000 : "u-boot"
+Dec 31 17:00:14 ngw user.notice kernel: 0x000000020000-0x0000007f0000 : "root"
+Dec 31 17:00:14 ngw user.notice kernel: 0x0000007f0000-0x000000800000 : "env"
+Dec 31 17:00:14 ngw user.info kernel: atmel_spi atmel_spi.0: Atmel SPI Controller at 0xffe00000 (irq 3)
+Dec 31 17:00:14 ngw user.info kernel: mtd_dataflash spi0.0: AT45DB642x (8448 KBytes) pagesize 1056 bytes (OTP)
+Dec 31 17:00:14 ngw user.info kernel: MACB_mii_bus: probed
+Dec 31 17:00:14 ngw user.info kernel: eth0: Atmel MACB at 0xfff01800 irq 25 (00:11:22:33:44:55)
+Dec 31 17:00:14 ngw user.info kernel: eth0: attached PHY driver [Generic PHY] (mii_bus:phy_addr=0:01, irq=-1)
+Dec 31 17:00:14 ngw user.info kernel: macb macb.1: invalid hw address, using random
+Dec 31 17:00:14 ngw user.info kernel: MACB_mii_bus: probed
+Dec 31 17:00:14 ngw user.info kernel: eth1: Atmel MACB at 0xfff01c00 irq 26 (62:c3:69:14:e2:c0)
+Dec 31 17:00:14 ngw user.info kernel: eth1: attached PHY driver [Generic PHY] (mii_bus:phy_addr=1:03, irq=-1)
+Dec 31 17:00:14 ngw user.info kernel: atmel_usba_udc atmel_usba_udc.0: MMIO registers at 0xfff03000 mapped at fff03000
+Dec 31 17:00:14 ngw user.info kernel: atmel_usba_udc atmel_usba_udc.0: FIFO at 0xff300000 mapped at ff300000
+Dec 31 17:00:14 ngw user.info kernel: at32ap700x_rtc at32ap700x_rtc.0: rtc core: registered at32ap700x_rtc as rtc0
+Dec 31 17:00:14 ngw user.info kernel: at32ap700x_rtc at32ap700x_rtc.0: Atmel RTC for AT32AP700x at fff00080 irq 21
+Dec 31 17:00:14 ngw user.info kernel: at32_wdt at32_wdt.0: AT32AP700X WDT at 0xfff000b0, timeout 2 sec (nowayout=0)
+Dec 31 17:00:14 ngw user.debug kernel: Registered led device: sys
+Dec 31 17:00:14 ngw user.debug kernel: Registered led device: a
+Dec 31 17:00:14 ngw user.debug kernel: Registered led device: b
+Dec 31 17:00:14 ngw user.info kernel: dw_dmac.0: DesignWare DMA Controller, 3 channels
+Dec 31 17:00:14 ngw user.info kernel: TCP cubic registered
+Dec 31 17:00:14 ngw user.info kernel: Initializing XFRM netlink socket
+Dec 31 17:00:14 ngw user.info kernel: NET: Registered protocol family 10
+Dec 31 17:00:14 ngw user.info kernel: IPv6 over IPv4 tunneling driver
+Dec 31 17:00:14 ngw user.info kernel: NET: Registered protocol family 17
+Dec 31 17:00:14 ngw user.info kernel: NET: Registered protocol family 15
+Dec 31 17:00:14 ngw user.warn kernel: cpufreq: AT32AP CPU frequency driver
+Dec 31 17:00:14 ngw user.info kernel: at32ap700x_rtc at32ap700x_rtc.0: setting system clock to 1970-01-01 00:00:00 UTC (0)
+Dec 31 17:00:14 ngw user.info kernel: atmel_mci atmel_mci.0: Atmel MCI controller at 0xfff02400 irq 28, 1 slots
+Dec 31 17:00:14 ngw user.notice kernel: Sending DHCP requests ., OK
+Dec 31 17:00:14 ngw user.warn kernel: IP-Config: Got DHCP answer from 192.168.0.1, my address is 192.168.0.16
+Dec 31 17:00:14 ngw user.warn kernel: IP-Config: Complete:
+Dec 31 17:00:14 ngw user.warn kernel:      device=eth0, addr=192.168.0.16, mask=255.255.255.0, gw=192.168.0.1,
+Dec 31 17:00:14 ngw user.warn kernel:      host=192.168.0.16, domain=example.org, nis-domain=(none),
+Dec 31 17:00:14 ngw user.warn kernel:      bootserver=192.168.0.1, rootserver=192.168.0.1, rootpath=
+Dec 31 17:00:14 ngw user.notice kernel: Looking up port of RPC 100003/2 on 192.168.0.1
+Dec 31 17:00:14 ngw user.notice kernel: Looking up port of RPC 100005/1 on 192.168.0.1
+Dec 31 17:00:14 ngw user.warn kernel: VFS: Mounted root (nfs filesystem) on device 0:13.
+Dec 31 17:00:14 ngw user.info kernel: Freeing init memory: 84K (90000000 - 90015000)
+Dec 31 17:00:14 ngw user.info kernel: eth0: link up (100/Full)
+Dec 31 17:00:14 ngw user.info kernel: usb0: MAC a2:9e:e1:56:9c:f4
+Dec 31 17:00:14 ngw user.info kernel: usb0: HOST MAC 0a:9c:46:a8:42:2d
+Dec 31 17:00:14 ngw user.info kernel: g_cdc gadget: CDC Composite Gadget, version: King Kamehameha Day 2008
+Dec 31 17:00:14 ngw user.info kernel: g_cdc gadget: g_cdc ready
+Dec 31 17:00:14 ngw user.info kernel: ADDRCONF(NETDEV_UP): eth1: link is not ready
+Dec 31 17:00:14 ngw user.info kernel: ADDRCONF(NETDEV_UP): usb0: link is not ready
+Dec 31 17:00:14 ngw user.info kernel: ip_tables: (C) 2000-2006 Netfilter Core Team
+Dec 31 17:00:14 ngw user.info kernel: nf_conntrack version 0.5.0 (468 buckets, 1872 max)
+Dec 31 17:00:14 ngw user.debug kernel: eth0: no IPv6 routers present
+Dec 31 17:00:14 ngw user.info kernel: warning: `proftpd' uses 32-bit capabilities (legacy support in use)
+Dec 31 17:00:11 ngw syslog.info syslogd started: BusyBox v1.17.1
+Dec 31 17:00:11 ngw user.notice kernel: klogd started: BusyBox v1.17.1 (2018-10-15 15:01:46 CEST)
+Dec 31 17:00:11 ngw user.notice kernel: Linux version 2.6.35.4 (student@Sanntid) (gcc version 4.2.4-atmel.1.1.3.avr32linux.1) #1 Mon Oct 15 15:07:41 CEST 2018
+Dec 31 17:00:11 ngw user.warn kernel: CPU: AT32AP700x chip revision C
+Dec 31 17:00:11 ngw user.warn kernel: CPU: AP7 [01] core revision 0 (AVR32B arch revision 1)
+Dec 31 17:00:11 ngw user.warn kernel: CPU: MMU configuration: Shared TLB
+Dec 31 17:00:11 ngw user.warn kernel: CPU: features: dsp simd ocd perfctr java
+Dec 31 17:00:11 ngw user.warn kernel: CPU: Running at 140.000 MHz
+Dec 31 17:00:11 ngw user.info kernel: Physical memory:
+Dec 31 17:00:11 ngw user.warn kernel:   10000000-11ffffff
+Dec 31 17:00:11 ngw user.info kernel: Reserved memory:
+Dec 31 17:00:11 ngw user.warn kernel:   10000000-101c87eb: Kernel code
+Dec 31 17:00:11 ngw user.warn kernel:   101c87ec-1028061f: Kernel data
+Dec 31 17:00:10 ngw daemon.info dnsmasq[395]: started, version 2.55 cachesize 150
+Dec 31 17:00:11 ngw daemon.warn dnsmasq[395]: overflow: 6 log entries lost
+Dec 31 17:00:11 ngw user.info kernel: NET: Registered protocol family 16
+Dec 31 17:00:11 ngw user.debug kernel: pio0: base 0xffe02800, irq 13 chains 96..127
+Dec 31 17:00:11 ngw user.debug kernel: pio2: base 0xffe03000, irq 15 chains 160..191
+Dec 31 17:00:11 ngw user.debug kernel: pio3: base 0xffe03400, irq 16 chains 192..223
+Dec 31 17:00:11 ngw user.debug kernel: pio4: base 0xffe03800, irq 17 chains 224..255
+Dec 31 17:00:11 ngw user.info kernel: pdc pdc.0: Atmel Peripheral DMA Controller enabled
+Dec 31 17:00:11 ngw user.info kernel: at32_eic at32_eic.0: External Interrupt Controller at 0xfff00100, IRQ 19
+Dec 31 17:00:11 ngw user.info kernel: at32_eic at32_eic.0: Handling 4 external IRQs, starting with IRQ 64
+Dec 31 17:00:11 ngw user.warn kernel: AVR32 AP Power Management enabled
+Dec 31 17:00:11 ngw user.debug kernel: tcb_clksrc: tc0 at 8.250 MHz
+Dec 31 17:00:11 ngw user.info kernel: Switching to clocksource tcb_clksrc
+Dec 31 17:00:11 ngw user.info kernel: NET: Registered protocol family 2
+Dec 31 17:00:11 ngw user.info kernel: IP route cache hash table entries: 1024 (order: 0, 4096 bytes)
+Dec 31 17:00:11 ngw user.info kernel: TCP established hash table entries: 1024 (order: 1, 8192 bytes)
+Dec 31 17:00:11 ngw user.info kernel: TCP bind hash table entries: 1024 (order: 0, 4096 bytes)
+Dec 31 17:00:11 ngw user.info kernel: TCP: Hash tables configured (established 1024 bind 1024)
+Dec 31 17:00:11 ngw user.info kernel: NET: Registered protocol family 1
+Dec 31 17:00:11 ngw user.info kernel: RPC: Registered udp transport module.
+Dec 31 17:00:11 ngw user.info kernel: RPC: Registered tcp transport module.
+Dec 31 17:00:11 ngw user.info kernel: RPC: Registered tcp NFSv4.1 backchannel transport module.
+Dec 31 17:00:11 ngw user.info kernel: io scheduler noop registered
+Dec 31 17:00:11 ngw user.info kernel: io scheduler cfq registered (default)
+Dec 31 17:00:11 ngw user.info kernel: atmel_usart.0: ttyS0 at MMIO 0xffe01000 (irq = 7) is a ATMEL_SERIAL
+Dec 31 17:00:11 ngw user.notice kernel: physmap platform flash device: 00800000 at 00000000
+Dec 31 17:00:11 ngw user.info kernel: physmap-flash.0: Found 1 x16 devices at 0x0 in 16-bit bank
+Dec 31 17:00:11 ngw user.info kernel: Amd/Fujitsu Extended Query Table at 0x0041
+Dec 31 17:00:11 ngw user.notice kernel: number of CFI chips: 1
+Dec 31 17:00:11 ngw user.notice kernel: Using physmap partition information
+Dec 31 17:00:11 ngw user.notice kernel: Creating 3 MTD partitions on "physmap-flash.0":
+Dec 31 17:00:11 ngw user.notice kernel: 0x000000000000-0x000000020000 : "u-boot"
+Dec 31 17:00:11 ngw user.notice kernel: 0x000000020000-0x0000007f0000 : "root"
+Dec 31 17:00:11 ngw user.info kernel: atmel_spi atmel_spi.0: Atmel SPI Controller at 0xffe00000 (irq 3)
+Dec 31 17:00:11 ngw user.info kernel: mtd_dataflash spi0.0: AT45DB642x (8448 KBytes) pagesize 1056 bytes (OTP)
+Dec 31 17:00:11 ngw user.info kernel: MACB_mii_bus: probed
+Dec 31 17:00:11 ngw user.info kernel: eth0: Atmel MACB at 0xfff01800 irq 25 (00:11:22:33:44:55)
+Dec 31 17:00:11 ngw user.info kernel: eth0: attached PHY driver [Generic PHY] (mii_bus:phy_addr=0:01, irq=-1)
+Dec 31 17:00:11 ngw user.info kernel: macb macb.1: invalid hw address, using random
+Dec 31 17:00:11 ngw user.info kernel: MACB_mii_bus: probed
+Dec 31 17:00:11 ngw user.info kernel: eth1: Atmel MACB at 0xfff01c00 irq 26 (42:3c:f8:97:53:f4)
+Dec 31 17:00:11 ngw user.info kernel: eth1: attached PHY driver [Generic PHY] (mii_bus:phy_addr=1:03, irq=-1)
+Dec 31 17:00:11 ngw user.info kernel: atmel_usba_udc atmel_usba_udc.0: MMIO registers at 0xfff03000 mapped at fff03000
+Dec 31 17:00:11 ngw user.info kernel: atmel_usba_udc atmel_usba_udc.0: FIFO at 0xff300000 mapped at ff300000
+Dec 31 17:00:11 ngw user.info kernel: at32ap700x_rtc at32ap700x_rtc.0: rtc core: registered at32ap700x_rtc as rtc0
+Dec 31 17:00:11 ngw user.info kernel: at32ap700x_rtc at32ap700x_rtc.0: Atmel RTC for AT32AP700x at fff00080 irq 21
+Dec 31 17:00:11 ngw user.info kernel: at32_wdt at32_wdt.0: AT32AP700X WDT at 0xfff000b0, timeout 2 sec (nowayout=0)
+Dec 31 17:00:11 ngw user.debug kernel: Registered led device: sys
+Dec 31 17:00:11 ngw user.debug kernel: Registered led device: a
+Dec 31 17:00:11 ngw user.debug kernel: Registered led device: b
+Dec 31 17:00:11 ngw user.info kernel: dw_dmac.0: DesignWare DMA Controller, 3 channels
+Dec 31 17:00:11 ngw user.info kernel: TCP cubic registered
+Dec 31 17:00:11 ngw user.info kernel: Initializing XFRM netlink socket
+Dec 31 17:00:11 ngw user.info kernel: NET: Registered protocol family 10
+Dec 31 17:00:11 ngw user.info kernel: IPv6 over IPv4 tunneling driver
+Dec 31 17:00:11 ngw user.info kernel: NET: Registered protocol family 17
+Dec 31 17:00:11 ngw user.info kernel: NET: Registered protocol family 15
+Dec 31 17:00:11 ngw user.warn kernel: cpufreq: AT32AP CPU frequency driver
+Dec 31 17:00:11 ngw user.info kernel: atmel_mci atmel_mci.0: Atmel MCI controller at 0xfff02400 irq 28, 1 slots
+Dec 31 17:00:11 ngw user.warn kernel: IP-Config: Got DHCP answer from 192.168.0.1, my address is 192.168.0.16
+Dec 31 17:00:11 ngw user.warn kernel: IP-Config: Complete:
+Dec 31 17:00:11 ngw user.warn kernel:      device=eth0, addr=192.168.0.16, mask=255.255.255.0, gw=192.168.0.1,
+Dec 31 17:00:11 ngw user.warn kernel:      bootserver=192.168.0.1, rootserver=192.168.0.1, rootpath=
+Dec 31 17:00:11 ngw user.notice kernel: Looking up port of RPC 100003/2 on 192.168.0.1
+Dec 31 17:00:11 ngw user.notice kernel: Looking up port of RPC 100005/1 on 192.168.0.1
+Dec 31 17:00:11 ngw user.info kernel: Freeing init memory: 84K (90000000 - 90015000)
+Dec 31 17:00:11 ngw user.info kernel: eth0: link up (100/Full)
+Dec 31 17:00:11 ngw user.info kernel: usb0: MAC a2:9e:e1:56:9c:f4
+Dec 31 17:00:11 ngw user.info kernel: usb0: HOST MAC 0a:9c:46:a8:42:2d
+Dec 31 17:00:11 ngw user.info kernel: g_cdc gadget: CDC Composite Gadget, version: King Kamehameha Day 2008
+Dec 31 17:00:11 ngw user.info kernel: g_cdc gadget: g_cdc ready
+Dec 31 17:00:11 ngw user.info kernel: ADDRCONF(NETDEV_UP): eth1: link is not ready
+Dec 31 17:00:11 ngw user.info kernel: ADDRCONF(NETDEV_UP): usb0: link is not ready
+Dec 31 17:00:11 ngw user.info kernel: ip_tables: (C) 2000-2006 Netfilter Core Team
+Dec 31 17:00:11 ngw user.info kernel: nf_conntrack version 0.5.0 (468 buckets, 1872 max)
+Dec 31 17:00:11 ngw user.info kernel: warning: `proftpd' uses 32-bit capabilities (legacy support in use)
+Dec 31 17:00:11 ngw user.debug kernel: eth0: no IPv6 routers present
+Dec 31 17:00:14 ngw user.info login[396]: root login on 'ttyS0'
+Dec 31 17:00:10 ngw syslog.info syslogd started: BusyBox v1.17.1
+Dec 31 17:00:10 ngw user.notice kernel: klogd started: BusyBox v1.17.1 (2018-10-15 15:01:46 CEST)
+Dec 31 17:00:10 ngw user.notice kernel: Linux version 2.6.35.4 (student@Sanntid) (gcc version 4.2.4-atmel.1.1.3.avr32linux.1) #1 Mon Oct 15 15:07:41 CEST 2018
+Dec 31 17:00:10 ngw user.warn kernel: CPU: AT32AP700x chip revision C
+Dec 31 17:00:10 ngw user.warn kernel: CPU: AP7 [01] core revision 0 (AVR32B arch revision 1)
+Dec 31 17:00:10 ngw user.warn kernel: CPU: MMU configuration: Shared TLB
+Dec 31 17:00:10 ngw user.warn kernel: CPU: features: dsp simd ocd perfctr java
+Dec 31 17:00:10 ngw user.warn kernel: CPU: Running at 140.000 MHz
+Dec 31 17:00:10 ngw user.info kernel: Physical memory:
+Dec 31 17:00:10 ngw user.warn kernel:   10000000-11ffffff
+Dec 31 17:00:10 ngw user.info kernel: Reserved memory:
+Dec 31 17:00:10 ngw user.warn kernel:   10000000-101c87eb: Kernel code
+Dec 31 17:00:10 ngw user.warn kernel:   101c87ec-1028061f: Kernel data
+Dec 31 17:00:10 ngw user.info kernel: PID hash table entries: 128 (order: -3, 512 bytes)
+Dec 31 17:00:10 ngw user.info kernel: Dentry cache hash table entries: 4096 (order: 2, 16384 bytes)
+Dec 31 17:00:10 ngw user.info kernel: Inode-cache hash table entries: 2048 (order: 1, 8192 bytes)
+Dec 31 17:00:10 ngw user.warn kernel: Memory: 29916k/29916k available (1741k kernel code, 2852k reserved, 148k data, 84k init)
+Dec 31 17:00:10 ngw daemon.info dnsmasq[395]: started, version 2.55 cachesize 150
+Dec 31 17:00:10 ngw user.info kernel: SLUB: Genslabs=11, HWalign=32, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+Dec 31 17:00:10 ngw user.info kernel: Hierarchical RCU implementation.
+Dec 31 17:00:10 ngw user.info kernel: 	RCU-based detection of stalled CPUs is disabled.
+Dec 31 17:00:10 ngw daemon.warn dnsmasq[395]: overflow: 6 log entries lost
+Dec 31 17:00:10 ngw user.info kernel: 	Verbose stalled-CPUs detection is disabled.
+Dec 31 17:00:10 ngw user.info kernel: NR_IRQS:288
+Dec 31 17:00:10 ngw user.info kernel: avr32_comparator: irq 0, 140.000 MHz
+Dec 31 17:00:10 ngw user.info kernel: console [ttyS0] enabled
+Dec 31 17:00:10 ngw user.info kernel: Calibrating delay using timer specific routine.. 285.99 BogoMIPS (lpj=142997)
+Dec 31 17:00:10 ngw user.info kernel: pid_max: default: 4096 minimum: 301
+Dec 31 17:00:10 ngw user.warn kernel: Mount-cache hash table entries: 512
+Dec 31 17:00:10 ngw user.info kernel: smc smc.0: Atmel Static Memory Controller at 0xfff03400
+Dec 31 17:00:10 ngw user.info kernel: NET: Registered protocol family 16
+Dec 31 17:00:10 ngw user.debug kernel: pio0: base 0xffe02800, irq 13 chains 96..127
+Dec 31 17:00:10 ngw user.debug kernel: pio1: base 0xffe02c00, irq 14 chains 128..159
+Dec 31 17:00:10 ngw user.debug kernel: pio2: base 0xffe03000, irq 15 chains 160..191
+Dec 31 17:00:10 ngw user.debug kernel: pio3: base 0xffe03400, irq 16 chains 192..223
+Dec 31 17:00:10 ngw user.debug kernel: pio4: base 0xffe03800, irq 17 chains 224..255
+Dec 31 17:00:10 ngw user.info kernel: pdc pdc.0: Atmel Peripheral DMA Controller enabled
+Dec 31 17:00:10 ngw user.info kernel: at32_eic at32_eic.0: External Interrupt Controller at 0xfff00100, IRQ 19
+Dec 31 17:00:10 ngw user.info kernel: at32_eic at32_eic.0: Handling 4 external IRQs, starting with IRQ 64
+Dec 31 17:00:10 ngw user.warn kernel: AVR32 AP Power Management enabled
+Dec 31 17:00:10 ngw user.debug kernel: tcb_clksrc: tc0 at 8.250 MHz
+Dec 31 17:00:10 ngw user.warn kernel: bio: create slab <bio-0> at 0
+Dec 31 17:00:10 ngw user.info kernel: Switching to clocksource tcb_clksrc
+Dec 31 17:00:10 ngw user.info kernel: NET: Registered protocol family 2
+Dec 31 17:00:10 ngw user.info kernel: IP route cache hash table entries: 1024 (order: 0, 4096 bytes)
+Dec 31 17:00:10 ngw user.info kernel: TCP established hash table entries: 1024 (order: 1, 8192 bytes)
+Dec 31 17:00:10 ngw user.info kernel: TCP bind hash table entries: 1024 (order: 0, 4096 bytes)
+Dec 31 17:00:10 ngw user.info kernel: TCP: Hash tables configured (established 1024 bind 1024)
+Dec 31 17:00:10 ngw user.info kernel: TCP reno registered
+Dec 31 17:00:10 ngw user.info kernel: NET: Registered protocol family 1
+Dec 31 17:00:10 ngw user.info kernel: RPC: Registered udp transport module.
+Dec 31 17:00:10 ngw user.info kernel: RPC: Registered tcp transport module.
+Dec 31 17:00:10 ngw user.info kernel: RPC: Registered tcp NFSv4.1 backchannel transport module.
+Dec 31 17:00:11 ngw user.info kernel: JFFS2 version 2.2. (NAND) © 2001-2006 Red Hat, Inc.
+Dec 31 17:00:11 ngw user.info kernel: msgmni has been set to 58
+Dec 31 17:00:11 ngw user.info kernel: alg: No test for stdrng (krng)
+Dec 31 17:00:11 ngw user.info kernel: io scheduler noop registered
+Dec 31 17:00:11 ngw user.info kernel: io scheduler cfq registered (default)
+Dec 31 17:00:11 ngw user.info kernel: atmel_usart.0: ttyS0 at MMIO 0xffe01000 (irq = 7) is a ATMEL_SERIAL
+Dec 31 17:00:11 ngw user.notice kernel: physmap platform flash device: 00800000 at 00000000
+Dec 31 17:00:11 ngw user.info kernel: physmap-flash.0: Found 1 x16 devices at 0x0 in 16-bit bank
+Dec 31 17:00:11 ngw user.info kernel: Amd/Fujitsu Extended Query Table at 0x0041
+Dec 31 17:00:11 ngw user.notice kernel: number of CFI chips: 1
+Dec 31 17:00:11 ngw user.notice kernel: RedBoot partition parsing not available
+Dec 31 17:00:11 ngw user.info kernel: eth0: attached PHY driver [Generic PHY] (mii_bus:phy_addr=0:01, irq=-1)
+Dec 31 17:00:11 ngw user.info kernel: macb macb.1: invalid hw address, using random
+Dec 31 17:00:11 ngw user.info kernel: MACB_mii_bus: probed
+Dec 31 17:00:11 ngw user.info kernel: eth1: Atmel MACB at 0xfff01c00 irq 26 (26:61:af:a3:86:03)
+Dec 31 17:00:11 ngw user.info kernel: eth1: attached PHY driver [Generic PHY] (mii_bus:phy_addr=1:03, irq=-1)
+Dec 31 17:00:11 ngw user.info kernel: atmel_usba_udc atmel_usba_udc.0: MMIO registers at 0xfff03000 mapped at fff03000
+Dec 31 17:00:11 ngw user.info kernel: atmel_usba_udc atmel_usba_udc.0: FIFO at 0xff300000 mapped at ff300000
+Dec 31 17:00:11 ngw user.info kernel: at32ap700x_rtc at32ap700x_rtc.0: rtc core: registered at32ap700x_rtc as rtc0
+Dec 31 17:00:11 ngw user.info kernel: at32ap700x_rtc at32ap700x_rtc.0: Atmel RTC for AT32AP700x at fff00080 irq 21
+Dec 31 17:00:11 ngw user.info kernel: at32_wdt at32_wdt.0: AT32AP700X WDT at 0xfff000b0, timeout 2 sec (nowayout=0)
+Dec 31 17:00:11 ngw user.debug kernel: Registered led device: sys
+Dec 31 17:00:11 ngw user.debug kernel: Registered led device: a
+Dec 31 17:00:11 ngw user.debug kernel: Registered led device: b
+Dec 31 17:00:11 ngw user.info kernel: dw_dmac.0: DesignWare DMA Controller, 3 channels
+Dec 31 17:00:11 ngw user.info kernel: TCP cubic registered
+Dec 31 17:00:11 ngw user.info kernel: Initializing XFRM netlink socket
+Dec 31 17:00:11 ngw user.info kernel: NET: Registered protocol family 10
+Dec 31 17:00:11 ngw user.info kernel: IPv6 over IPv4 tunneling driver
+Dec 31 17:00:11 ngw user.info kernel: NET: Registered protocol family 17
+Dec 31 17:00:11 ngw user.info kernel: NET: Registered protocol family 15
+Dec 31 17:00:11 ngw user.warn kernel: cpufreq: AT32AP CPU frequency driver
+Dec 31 17:00:11 ngw user.info kernel: at32ap700x_rtc at32ap700x_rtc.0: setting system clock to 1970-01-01 00:00:00 UTC (0)
+Dec 31 17:00:11 ngw user.info kernel: atmel_mci atmel_mci.0: Atmel MCI controller at 0xfff02400 irq 28, 1 slots
+Dec 31 17:00:11 ngw user.notice kernel: Sending DHCP requests ., OK
+Dec 31 17:00:11 ngw user.warn kernel: IP-Config: Got DHCP answer from 192.168.0.1, my address is 192.168.0.16
+Dec 31 17:00:11 ngw user.warn kernel: IP-Config: Complete:
+Dec 31 17:00:11 ngw user.warn kernel:      device=eth0, addr=192.168.0.16, mask=255.255.255.0, gw=192.168.0.1,
+Dec 31 17:00:11 ngw user.warn kernel:      host=192.168.0.16, domain=example.org, nis-domain=(none),
+Dec 31 17:00:11 ngw user.warn kernel:      bootserver=192.168.0.1, rootserver=192.168.0.1, rootpath=
+Dec 31 17:00:11 ngw user.notice kernel: Looking up port of RPC 100003/2 on 192.168.0.1
+Dec 31 17:00:11 ngw user.notice kernel: Looking up port of RPC 100005/1 on 192.168.0.1
+Dec 31 17:00:11 ngw user.warn kernel: VFS: Mounted root (nfs filesystem) on device 0:13.
+Dec 31 17:00:11 ngw user.info kernel: Freeing init memory: 84K (90000000 - 90015000)
+Dec 31 17:00:11 ngw user.info kernel: eth0: link up (100/Full)
+Dec 31 17:00:11 ngw user.info kernel: usb0: MAC a2:9e:e1:56:9c:f4
+Dec 31 17:00:11 ngw user.info kernel: usb0: HOST MAC 0a:9c:46:a8:42:2d
+Dec 31 17:00:11 ngw user.info kernel: g_cdc gadget: CDC Composite Gadget, version: King Kamehameha Day 2008
+Dec 31 17:00:11 ngw user.info kernel: g_cdc gadget: g_cdc ready
+Dec 31 17:00:11 ngw user.info kernel: ADDRCONF(NETDEV_UP): eth1: link is not ready
+Dec 31 17:00:11 ngw user.info kernel: ADDRCONF(NETDEV_UP): usb0: link is not ready
+Dec 31 17:00:11 ngw user.info kernel: ip_tables: (C) 2000-2006 Netfilter Core Team
+Dec 31 17:00:11 ngw user.info kernel: nf_conntrack version 0.5.0 (468 buckets, 1872 max)
+Dec 31 17:00:11 ngw user.info kernel: warning: `proftpd' uses 32-bit capabilities (legacy support in use)
+Dec 31 17:00:11 ngw user.debug kernel: eth0: no IPv6 routers present
+Dec 31 17:00:14 ngw user.info login[396]: root login on 'ttyS0'
+Dec 31 17:00:29 ngw user.info passwd: Password for root changed by root
+Dec 31 17:22:32 ngw user.warn kernel: hello: module license 'unspecified' taints kernel.
+Dec 31 17:22:32 ngw user.warn kernel: Disabling lock debugging due to kernel taint
+Dec 31 17:22:32 ngw user.info kernel: Hello world (init)
+Dec 31 17:26:25 ngw user.info kernel: Hello world (exit)
+Dec 31 17:26:44 ngw user.info kernel: Hello world! (LOADING...)
+Dec 31 17:30:42 ngw user.info kernel: Hello world! (EXITING...)
+Dec 31 17:31:21 ngw user.info kernel: Hello world! (LOADING...)
+Dec 31 17:31:34 ngw user.info kernel: Hello world! (EXITING...)
+Dec 31 18:09:48 ngw user.info kernel: Creating proc entry...
+Dec 31 18:13:44 ngw user.info kernel: Exiting...
+Dec 31 18:14:23 ngw user.info kernel: Creating proc entry...
+Dec 31 18:15:54 ngw user.info kernel: Removed /proc/magnus. Exiting...
+Dec 31 18:18:30 ngw user.info kernel: Creating proc entry...
+Dec 31 18:19:02 ngw user.info kernel: Removed /proc/magnus. Exiting...
+Dec 31 18:25:56 ngw user.info kernel: Creating proc entry...
+Dec 31 18:47:25 ngw user.info kernel: Removed /proc/magnus. Exiting...
+Dec 31 18:48:46 ngw user.info kernel: Creating proc entry...
+Dec 31 18:48:46 ngw user.info kernel: thread running
+Dec 31 18:48:51 ngw user.info kernel: thread running
+Dec 31 18:48:56 ngw user.info kernel: thread running
+Dec 31 18:49:01 ngw user.info kernel: thread running
+Dec 31 18:49:06 ngw user.info kernel: thread running
+Dec 31 18:49:11 ngw user.info kernel: thread running
+Dec 31 18:49:16 ngw user.info kernel: thread running
+Dec 31 18:49:21 ngw user.info kernel: thread running
+Dec 31 18:49:26 ngw user.info kernel: thread running
+Dec 31 18:49:31 ngw user.info kernel: thread running
+Dec 31 18:49:36 ngw user.info kernel: thread running
+Dec 31 18:49:41 ngw user.info kernel: thread running
+Dec 31 18:49:46 ngw user.info kernel: thread running
+Dec 31 18:49:51 ngw user.info kernel: thread running
+Dec 31 18:49:56 ngw user.info kernel: thread running
+Dec 31 18:50:01 ngw user.info kernel: thread running
+Dec 31 18:50:06 ngw user.info kernel: thread running
+Dec 31 18:50:11 ngw user.info kernel: thread running
+Dec 31 18:50:16 ngw user.info kernel: thread running
+Dec 31 18:50:21 ngw user.info kernel: thread running
+Dec 31 17:00:10 ngw syslog.info syslogd started: BusyBox v1.17.1
+Dec 31 17:00:10 ngw user.notice kernel: klogd started: BusyBox v1.17.1 (2018-10-15 15:01:46 CEST)
+Dec 31 17:00:10 ngw user.notice kernel: Linux version 2.6.35.4 (student@Sanntid) (gcc version 4.2.4-atmel.1.1.3.avr32linux.1) #1 Mon Oct 15 15:07:41 CEST 2018
+Dec 31 17:00:10 ngw user.warn kernel: CPU: AT32AP700x chip revision C
+Dec 31 17:00:10 ngw user.warn kernel: CPU: AP7 [01] core revision 0 (AVR32B arch revision 1)
+Dec 31 17:00:10 ngw user.warn kernel: CPU: MMU configuration: Shared TLB
+Dec 31 17:00:10 ngw user.warn kernel: CPU: features: dsp simd ocd perfctr java
+Dec 31 17:00:10 ngw user.warn kernel: CPU: Running at 140.000 MHz
+Dec 31 17:00:10 ngw user.info kernel: Physical memory:
+Dec 31 17:00:10 ngw user.warn kernel:   10000000-11ffffff
+Dec 31 17:00:10 ngw user.info kernel: Reserved memory:
+Dec 31 17:00:10 ngw user.warn kernel:   10000000-101c87eb: Kernel code
+Dec 31 17:00:10 ngw user.warn kernel:   101c87ec-1028061f: Kernel data
+Dec 31 17:00:10 ngw user.warn kernel: Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 8128
+Dec 31 17:00:10 ngw user.notice kernel: Kernel command line: root=/dev/nfs nfsroot=192.168.0.1:/export/nfs ip=dhcp console=ttyS0
+Dec 31 17:00:10 ngw user.info kernel: PID hash table entries: 128 (order: -3, 512 bytes)
+Dec 31 17:00:10 ngw daemon.info dnsmasq[395]: started, version 2.55 cachesize 150
+Dec 31 17:00:10 ngw daemon.warn dnsmasq[395]: overflow: 6 log entries lost
+Dec 31 17:00:10 ngw user.info kernel: Dentry cache hash table entries: 4096 (order: 2, 16384 bytes)
+Dec 31 17:00:10 ngw user.info kernel: Inode-cache hash table entries: 2048 (order: 1, 8192 bytes)
+Dec 31 17:00:10 ngw user.warn kernel: Memory: 29916k/29916k available (1741k kernel code, 2852k reserved, 148k data, 84k init)
+Dec 31 17:00:10 ngw user.info kernel: SLUB: Genslabs=11, HWalign=32, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+Dec 31 17:00:10 ngw user.info kernel: Hierarchical RCU implementation.
+Dec 31 17:00:10 ngw user.info kernel: 	RCU-based detection of stalled CPUs is disabled.
+Dec 31 17:00:10 ngw user.info kernel: 	Verbose stalled-CPUs detection is disabled.
+Dec 31 17:00:10 ngw user.info kernel: NR_IRQS:288
+Dec 31 17:00:10 ngw user.info kernel: avr32_comparator: irq 0, 140.000 MHz
+Dec 31 17:00:10 ngw user.info kernel: console [ttyS0] enabled
+Dec 31 17:00:10 ngw user.info kernel: Calibrating delay using timer specific routine.. 285.98 BogoMIPS (lpj=142994)
+Dec 31 17:00:10 ngw user.info kernel: pid_max: default: 4096 minimum: 301
+Dec 31 17:00:10 ngw user.warn kernel: Mount-cache hash table entries: 512
+Dec 31 17:00:10 ngw user.info kernel: smc smc.0: Atmel Static Memory Controller at 0xfff03400
+Dec 31 17:00:10 ngw user.info kernel: NET: Registered protocol family 16
+Dec 31 17:00:10 ngw user.debug kernel: pio0: base 0xffe02800, irq 13 chains 96..127
+Dec 31 17:00:10 ngw user.debug kernel: pio1: base 0xffe02c00, irq 14 chains 128..159
+Dec 31 17:00:10 ngw user.debug kernel: pio2: base 0xffe03000, irq 15 chains 160..191
+Dec 31 17:00:10 ngw user.debug kernel: pio3: base 0xffe03400, irq 16 chains 192..223
+Dec 31 17:00:10 ngw user.debug kernel: pio4: base 0xffe03800, irq 17 chains 224..255
+Dec 31 17:00:10 ngw user.info kernel: pdc pdc.0: Atmel Peripheral DMA Controller enabled
+Dec 31 17:00:10 ngw user.info kernel: at32_eic at32_eic.0: External Interrupt Controller at 0xfff00100, IRQ 19
+Dec 31 17:00:10 ngw user.info kernel: at32_eic at32_eic.0: Handling 4 external IRQs, starting with IRQ 64
+Dec 31 17:00:10 ngw user.warn kernel: AVR32 AP Power Management enabled
+Dec 31 17:00:10 ngw user.debug kernel: tcb_clksrc: tc0 at 8.250 MHz
+Dec 31 17:00:10 ngw user.warn kernel: bio: create slab <bio-0> at 0
+Dec 31 17:00:10 ngw user.info kernel: Switching to clocksource tcb_clksrc
+Dec 31 17:00:10 ngw user.info kernel: NET: Registered protocol family 2
+Dec 31 17:00:10 ngw user.info kernel: IP route cache hash table entries: 1024 (order: 0, 4096 bytes)
+Dec 31 17:00:10 ngw user.info kernel: TCP established hash table entries: 1024 (order: 1, 8192 bytes)
+Dec 31 17:00:10 ngw user.info kernel: TCP bind hash table entries: 1024 (order: 0, 4096 bytes)
+Dec 31 17:00:10 ngw user.info kernel: TCP: Hash tables configured (established 1024 bind 1024)
+Dec 31 17:00:10 ngw user.info kernel: TCP reno registered
+Dec 31 17:00:10 ngw user.info kernel: NET: Registered protocol family 1
+Dec 31 17:00:10 ngw user.info kernel: RPC: Registered udp transport module.
+Dec 31 17:00:10 ngw user.info kernel: RPC: Registered tcp transport module.
+Dec 31 17:00:10 ngw user.info kernel: RPC: Registered tcp NFSv4.1 backchannel transport module.
+Dec 31 17:00:10 ngw user.info kernel: JFFS2 version 2.2. (NAND) © 2001-2006 Red Hat, Inc.
+Dec 31 17:00:10 ngw user.info kernel: msgmni has been set to 58
+Dec 31 17:00:10 ngw user.info kernel: alg: No test for stdrng (krng)
+Dec 31 17:00:10 ngw user.info kernel: io scheduler noop registered
+Dec 31 17:00:10 ngw user.info kernel: io scheduler cfq registered (default)
+Dec 31 17:00:10 ngw user.info kernel: atmel_usart.0: ttyS0 at MMIO 0xffe01000 (irq = 7) is a ATMEL_SERIAL
+Dec 31 17:00:10 ngw user.notice kernel: physmap platform flash device: 00800000 at 00000000
+Dec 31 17:00:10 ngw user.info kernel: physmap-flash.0: Found 1 x16 devices at 0x0 in 16-bit bank
+Dec 31 17:00:10 ngw user.info kernel: Amd/Fujitsu Extended Query Table at 0x0041
+Dec 31 17:00:10 ngw user.notice kernel: number of CFI chips: 1
+Dec 31 17:00:10 ngw user.notice kernel: RedBoot partition parsing not available
+Dec 31 17:00:10 ngw user.notice kernel: Using physmap partition information
+Dec 31 17:00:10 ngw user.notice kernel: Creating 3 MTD partitions on "physmap-flash.0":
+Dec 31 17:00:10 ngw user.notice kernel: 0x000000000000-0x000000020000 : "u-boot"
+Dec 31 17:00:10 ngw user.notice kernel: 0x000000020000-0x0000007f0000 : "root"
+Dec 31 17:00:10 ngw user.notice kernel: 0x0000007f0000-0x000000800000 : "env"
+Dec 31 17:00:10 ngw user.info kernel: atmel_spi atmel_spi.0: Atmel SPI Controller at 0xffe00000 (irq 3)
+Dec 31 17:00:10 ngw user.info kernel: mtd_dataflash spi0.0: AT45DB642x (8448 KBytes) pagesize 1056 bytes (OTP)
+Dec 31 17:00:10 ngw user.info kernel: MACB_mii_bus: probed
+Dec 31 17:00:10 ngw user.info kernel: eth0: Atmel MACB at 0xfff01800 irq 25 (00:11:22:33:44:55)
+Dec 31 17:00:10 ngw user.info kernel: eth0: attached PHY driver [Generic PHY] (mii_bus:phy_addr=0:01, irq=-1)
+Dec 31 17:00:11 ngw user.info kernel: macb macb.1: invalid hw address, using random
+Dec 31 17:00:11 ngw user.info kernel: MACB_mii_bus: probed
+Dec 31 17:00:11 ngw user.info kernel: eth1: Atmel MACB at 0xfff01c00 irq 26 (02:2a:f3:ef:1e:83)
+Dec 31 17:00:11 ngw user.info kernel: eth1: attached PHY driver [Generic PHY] (mii_bus:phy_addr=1:03, irq=-1)
+Dec 31 17:00:11 ngw user.info kernel: atmel_usba_udc atmel_usba_udc.0: MMIO registers at 0xfff03000 mapped at fff03000
+Dec 31 17:00:11 ngw user.info kernel: atmel_usba_udc atmel_usba_udc.0: FIFO at 0xff300000 mapped at ff300000
+Dec 31 17:00:11 ngw user.info kernel: at32ap700x_rtc at32ap700x_rtc.0: rtc core: registered at32ap700x_rtc as rtc0
+Dec 31 17:00:11 ngw user.info kernel: at32ap700x_rtc at32ap700x_rtc.0: Atmel RTC for AT32AP700x at fff00080 irq 21
+Dec 31 17:00:11 ngw user.info kernel: at32_wdt at32_wdt.0: AT32AP700X WDT at 0xfff000b0, timeout 2 sec (nowayout=0)
+Dec 31 17:00:11 ngw user.debug kernel: Registered led device: sys
+Dec 31 17:00:11 ngw user.debug kernel: Registered led device: a
+Dec 31 17:00:11 ngw user.warn kernel: cpufreq: AT32AP CPU frequency driver
+Dec 31 17:00:11 ngw user.info kernel: at32ap700x_rtc at32ap700x_rtc.0: setting system clock to 1970-01-01 00:00:00 UTC (0)
+Dec 31 17:00:11 ngw user.info kernel: atmel_mci atmel_mci.0: Atmel MCI controller at 0xfff02400 irq 28, 1 slots
+Dec 31 17:00:11 ngw user.notice kernel: Sending DHCP requests ., OK
+Dec 31 17:00:11 ngw user.warn kernel: IP-Config: Got DHCP answer from 192.168.0.1, my address is 192.168.0.16
+Dec 31 17:00:11 ngw user.warn kernel: IP-Config: Complete:
+Dec 31 17:00:11 ngw user.warn kernel:      device=eth0, addr=192.168.0.16, mask=255.255.255.0, gw=192.168.0.1,
+Dec 31 17:00:11 ngw user.warn kernel:      host=192.168.0.16, domain=example.org, nis-domain=(none),
+Dec 31 17:00:11 ngw user.warn kernel:      bootserver=192.168.0.1, rootserver=192.168.0.1, rootpath=
+Dec 31 17:00:11 ngw user.notice kernel: Looking up port of RPC 100003/2 on 192.168.0.1
+Dec 31 17:00:11 ngw user.notice kernel: Looking up port of RPC 100005/1 on 192.168.0.1
+Dec 31 17:00:11 ngw user.warn kernel: VFS: Mounted root (nfs filesystem) on device 0:13.
+Dec 31 17:00:11 ngw user.info kernel: Freeing init memory: 84K (90000000 - 90015000)
+Dec 31 17:00:11 ngw user.info kernel: eth0: link up (100/Full)
+Dec 31 17:00:11 ngw user.info kernel: usb0: MAC a2:9e:e1:56:9c:f4
+Dec 31 17:00:11 ngw user.info kernel: usb0: HOST MAC 0a:9c:46:a8:42:2d
+Dec 31 17:00:11 ngw user.info kernel: g_cdc gadget: CDC Composite Gadget, version: King Kamehameha Day 2008
+Dec 31 17:00:11 ngw user.info kernel: g_cdc gadget: g_cdc ready
+Dec 31 17:00:11 ngw user.info kernel: ADDRCONF(NETDEV_UP): eth1: link is not ready
+Dec 31 17:00:11 ngw user.info kernel: ADDRCONF(NETDEV_UP): usb0: link is not ready
+Dec 31 17:00:11 ngw user.info kernel: ip_tables: (C) 2000-2006 Netfilter Core Team
+Dec 31 17:00:11 ngw user.info kernel: nf_conntrack version 0.5.0 (468 buckets, 1872 max)
+Dec 31 17:00:11 ngw user.info kernel: warning: `proftpd' uses 32-bit capabilities (legacy support in use)
+Dec 31 17:00:11 ngw user.debug kernel: eth0: no IPv6 routers present
+Dec 31 17:00:29 ngw user.info login[396]: root login on 'ttyS0'
+Dec 31 17:03:02 ngw user.info kernel: Creating proc entry...
+Dec 31 17:00:11 ngw syslog.info syslogd started: BusyBox v1.17.1
+Dec 31 17:00:11 ngw user.notice kernel: klogd started: BusyBox v1.17.1 (2018-10-15 15:01:46 CEST)
+Dec 31 17:00:11 ngw user.notice kernel: Linux version 2.6.35.4 (student@Sanntid) (gcc version 4.2.4-atmel.1.1.3.avr32linux.1) #1 Mon Oct 15 15:07:41 CEST 2018
+Dec 31 17:00:11 ngw user.warn kernel: CPU: AT32AP700x chip revision C
+Dec 31 17:00:11 ngw user.warn kernel: CPU: AP7 [01] core revision 0 (AVR32B arch revision 1)
+Dec 31 17:00:11 ngw user.warn kernel: CPU: MMU configuration: Shared TLB
+Dec 31 17:00:11 ngw user.warn kernel: CPU: features: dsp simd ocd perfctr java
+Dec 31 17:00:11 ngw user.warn kernel: CPU: Running at 140.000 MHz
+Dec 31 17:00:11 ngw user.info kernel: Physical memory:
+Dec 31 17:00:11 ngw user.warn kernel:   10000000-11ffffff
+Dec 31 17:00:11 ngw user.info kernel: Reserved memory:
+Dec 31 17:00:11 ngw user.warn kernel:   10000000-101c87eb: Kernel code
+Dec 31 17:00:11 ngw user.warn kernel:   101c87ec-1028061f: Kernel data
+Dec 31 17:00:11 ngw user.info kernel: Inode-cache hash table entries: 2048 (order: 1, 8192 bytes)
+Dec 31 17:00:11 ngw user.warn kernel: Memory: 29916k/29916k available (1741k kernel code, 2852k reserved, 148k data, 84k init)
+Dec 31 17:00:11 ngw user.info kernel: SLUB: Genslabs=11, HWalign=32, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+Dec 31 17:00:11 ngw user.info kernel: Hierarchical RCU implementation.
+Dec 31 17:00:11 ngw user.info kernel: 	RCU-based detection of stalled CPUs is disabled.
+Dec 31 17:00:11 ngw user.info kernel: 	Verbose stalled-CPUs detection is disabled.
+Dec 31 17:00:11 ngw user.info kernel: NR_IRQS:288
+Dec 31 17:00:11 ngw user.info kernel: avr32_comparator: irq 0, 140.000 MHz
+Dec 31 17:00:11 ngw user.info kernel: console [ttyS0] enabled
+Dec 31 17:00:11 ngw user.info kernel: Calibrating delay using timer specific routine.. 285.99 BogoMIPS (lpj=142997)
+Dec 31 17:00:11 ngw user.info kernel: pid_max: default: 4096 minimum: 301
+Dec 31 17:00:11 ngw user.warn kernel: Mount-cache hash table entries: 512
+Dec 31 17:00:11 ngw user.info kernel: smc smc.0: Atmel Static Memory Controller at 0xfff03400
+Dec 31 17:00:11 ngw user.info kernel: NET: Registered protocol family 16
+Dec 31 17:00:11 ngw user.debug kernel: pio0: base 0xffe02800, irq 13 chains 96..127
+Dec 31 17:00:11 ngw user.debug kernel: pio1: base 0xffe02c00, irq 14 chains 128..159
+Dec 31 17:00:10 ngw daemon.info dnsmasq[395]: started, version 2.55 cachesize 150
+Dec 31 17:00:11 ngw daemon.warn dnsmasq[395]: overflow: 6 log entries lost
+Dec 31 17:00:11 ngw user.debug kernel: pio2: base 0xffe03000, irq 15 chains 160..191
+Dec 31 17:00:11 ngw user.debug kernel: pio3: base 0xffe03400, irq 16 chains 192..223
+Dec 31 17:00:11 ngw user.debug kernel: pio4: base 0xffe03800, irq 17 chains 224..255
+Dec 31 17:00:11 ngw user.info kernel: pdc pdc.0: Atmel Peripheral DMA Controller enabled
+Dec 31 17:00:11 ngw user.info kernel: at32_eic at32_eic.0: External Interrupt Controller at 0xfff00100, IRQ 19
+Dec 31 17:00:11 ngw user.info kernel: at32_eic at32_eic.0: Handling 4 external IRQs, starting with IRQ 64
+Dec 31 17:00:11 ngw user.warn kernel: AVR32 AP Power Management enabled
+Dec 31 17:00:11 ngw user.debug kernel: tcb_clksrc: tc0 at 8.250 MHz
+Dec 31 17:00:11 ngw user.warn kernel: bio: create slab <bio-0> at 0
+Dec 31 17:00:11 ngw user.info kernel: Switching to clocksource tcb_clksrc
+Dec 31 17:00:11 ngw user.info kernel: NET: Registered protocol family 2
+Dec 31 17:00:11 ngw user.info kernel: IP route cache hash table entries: 1024 (order: 0, 4096 bytes)
+Dec 31 17:00:11 ngw user.info kernel: TCP established hash table entries: 1024 (order: 1, 8192 bytes)
+Dec 31 17:00:11 ngw user.info kernel: TCP bind hash table entries: 1024 (order: 0, 4096 bytes)
+Dec 31 17:00:11 ngw user.info kernel: TCP: Hash tables configured (established 1024 bind 1024)
+Dec 31 17:00:11 ngw user.info kernel: NET: Registered protocol family 1
+Dec 31 17:00:11 ngw user.info kernel: RPC: Registered udp transport module.
+Dec 31 17:00:11 ngw user.info kernel: RPC: Registered tcp transport module.
+Dec 31 17:00:11 ngw user.info kernel: JFFS2 version 2.2. (NAND) © 2001-2006 Red Hat, Inc.
+Dec 31 17:00:11 ngw user.info kernel: msgmni has been set to 58
+Dec 31 17:00:11 ngw user.info kernel: alg: No test for stdrng (krng)
+Dec 31 17:00:11 ngw user.info kernel: io scheduler noop registered
+Dec 31 17:00:11 ngw user.info kernel: io scheduler cfq registered (default)
+Dec 31 17:00:11 ngw user.info kernel: atmel_usart.0: ttyS0 at MMIO 0xffe01000 (irq = 7) is a ATMEL_SERIAL
+Dec 31 17:00:11 ngw user.notice kernel: physmap platform flash device: 00800000 at 00000000
+Dec 31 17:00:11 ngw user.info kernel: physmap-flash.0: Found 1 x16 devices at 0x0 in 16-bit bank
+Dec 31 17:00:11 ngw user.info kernel: Amd/Fujitsu Extended Query Table at 0x0041
+Dec 31 17:00:11 ngw user.notice kernel: number of CFI chips: 1
+Dec 31 17:00:11 ngw user.notice kernel: RedBoot partition parsing not available
+Dec 31 17:00:11 ngw user.notice kernel: Using physmap partition information
+Dec 31 17:00:11 ngw user.notice kernel: Creating 3 MTD partitions on "physmap-flash.0":
+Dec 31 17:00:11 ngw user.notice kernel: 0x000000000000-0x000000020000 : "u-boot"
+Dec 31 17:00:11 ngw user.notice kernel: 0x000000020000-0x0000007f0000 : "root"
+Dec 31 17:00:11 ngw user.notice kernel: 0x0000007f0000-0x000000800000 : "env"
+Dec 31 17:00:11 ngw user.info kernel: atmel_spi atmel_spi.0: Atmel SPI Controller at 0xffe00000 (irq 3)
+Dec 31 17:00:11 ngw user.info kernel: mtd_dataflash spi0.0: AT45DB642x (8448 KBytes) pagesize 1056 bytes (OTP)
+Dec 31 17:00:11 ngw user.info kernel: MACB_mii_bus: probed
+Dec 31 17:00:11 ngw user.info kernel: eth0: Atmel MACB at 0xfff01800 irq 25 (00:11:22:33:44:55)
+Dec 31 17:00:11 ngw user.info kernel: eth0: attached PHY driver [Generic PHY] (mii_bus:phy_addr=0:01, irq=-1)
+Dec 31 17:00:11 ngw user.info kernel: macb macb.1: invalid hw address, using random
+Dec 31 17:00:11 ngw user.info kernel: MACB_mii_bus: probed
+Dec 31 17:00:11 ngw user.info kernel: eth1: Atmel MACB at 0xfff01c00 irq 26 (1a:55:06:d6:36:45)
+Dec 31 17:00:11 ngw user.info kernel: eth1: attached PHY driver [Generic PHY] (mii_bus:phy_addr=1:03, irq=-1)
+Dec 31 17:00:11 ngw user.info kernel: atmel_usba_udc atmel_usba_udc.0: MMIO registers at 0xfff03000 mapped at fff03000
+Dec 31 17:00:11 ngw user.info kernel: atmel_usba_udc atmel_usba_udc.0: FIFO at 0xff300000 mapped at ff300000
+Dec 31 17:00:11 ngw user.info kernel: at32ap700x_rtc at32ap700x_rtc.0: rtc core: registered at32ap700x_rtc as rtc0
+Dec 31 17:00:11 ngw user.info kernel: at32ap700x_rtc at32ap700x_rtc.0: Atmel RTC for AT32AP700x at fff00080 irq 21
+Dec 31 17:00:11 ngw user.info kernel: at32_wdt at32_wdt.0: AT32AP700X WDT at 0xfff000b0, timeout 2 sec (nowayout=0)
+Dec 31 17:00:11 ngw user.debug kernel: Registered led device: sys
+Dec 31 17:00:11 ngw user.debug kernel: Registered led device: a
+Dec 31 17:00:11 ngw user.debug kernel: Registered led device: b
+Dec 31 17:00:11 ngw user.info kernel: dw_dmac.0: DesignWare DMA Controller, 3 channels
+Dec 31 17:00:11 ngw user.info kernel: TCP cubic registered
+Dec 31 17:00:11 ngw user.info kernel: Initializing XFRM netlink socket
+Dec 31 17:00:11 ngw user.info kernel: NET: Registered protocol family 10
+Dec 31 17:00:11 ngw user.info kernel: IPv6 over IPv4 tunneling driver
+Dec 31 17:00:11 ngw user.info kernel: NET: Registered protocol family 17
+Dec 31 17:00:11 ngw user.info kernel: NET: Registered protocol family 15
+Dec 31 17:00:11 ngw user.warn kernel: cpufreq: AT32AP CPU frequency driver
+Dec 31 17:00:11 ngw user.info kernel: at32ap700x_rtc at32ap700x_rtc.0: setting system clock to 1970-01-01 00:00:00 UTC (0)
+Dec 31 17:00:11 ngw user.info kernel: atmel_mci atmel_mci.0: Atmel MCI controller at 0xfff02400 irq 28, 1 slots
+Dec 31 17:00:11 ngw user.notice kernel: Sending DHCP requests ., OK
+Dec 31 17:00:11 ngw user.warn kernel: IP-Config: Got DHCP answer from 192.168.0.1, my address is 192.168.0.16
+Dec 31 17:00:11 ngw user.warn kernel: IP-Config: Complete:
+Dec 31 17:00:11 ngw user.warn kernel:      device=eth0, addr=192.168.0.16, mask=255.255.255.0, gw=192.168.0.1,
+Dec 31 17:00:11 ngw user.warn kernel:      host=192.168.0.16, domain=example.org, nis-domain=(none),
+Dec 31 17:00:11 ngw user.warn kernel:      bootserver=192.168.0.1, rootserver=192.168.0.1, rootpath=
+Dec 31 17:00:11 ngw user.notice kernel: Looking up port of RPC 100003/2 on 192.168.0.1
+Dec 31 17:00:11 ngw user.notice kernel: Looking up port of RPC 100005/1 on 192.168.0.1
+Dec 31 17:00:11 ngw user.warn kernel: VFS: Mounted root (nfs filesystem) on device 0:13.
+Dec 31 17:00:11 ngw user.info kernel: Freeing init memory: 84K (90000000 - 90015000)
+Dec 31 17:00:11 ngw user.info kernel: eth0: link up (100/Full)
+Dec 31 17:00:11 ngw user.info kernel: usb0: MAC a2:9e:e1:56:9c:f4
+Dec 31 17:00:11 ngw user.info kernel: usb0: HOST MAC 0a:9c:46:a8:42:2d
+Dec 31 17:00:11 ngw user.info kernel: g_cdc gadget: CDC Composite Gadget, version: King Kamehameha Day 2008
+Dec 31 17:00:11 ngw user.info kernel: g_cdc gadget: g_cdc ready
+Dec 31 17:00:11 ngw user.info kernel: ADDRCONF(NETDEV_UP): eth1: link is not ready
+Dec 31 17:00:11 ngw user.info kernel: ADDRCONF(NETDEV_UP): usb0: link is not ready
+Dec 31 17:00:11 ngw user.info kernel: ip_tables: (C) 2000-2006 Netfilter Core Team
+Dec 31 17:00:11 ngw user.info kernel: nf_conntrack version 0.5.0 (468 buckets, 1872 max)
+Dec 31 17:00:11 ngw user.info kernel: warning: `proftpd' uses 32-bit capabilities (legacy support in use)
+Dec 31 17:00:11 ngw user.debug kernel: eth0: no IPv6 routers present
+Dec 31 17:00:20 ngw user.info login[396]: root login on 'ttyS0'
+Dec 31 17:00:37 ngw user.info kernel: Creating proc entry...
+Dec 31 17:00:13 ngw syslog.info syslogd started: BusyBox v1.17.1
+Dec 31 17:00:13 ngw user.notice kernel: klogd started: BusyBox v1.17.1 (2018-10-15 15:01:46 CEST)
+Dec 31 17:00:13 ngw user.notice kernel: Linux version 2.6.35.4 (student@Sanntid) (gcc version 4.2.4-atmel.1.1.3.avr32linux.1) #1 Mon Oct 15 15:07:41 CEST 2018
+Dec 31 17:00:13 ngw user.warn kernel: CPU: AT32AP700x chip revision C
+Dec 31 17:00:13 ngw user.warn kernel: CPU: AP7 [01] core revision 0 (AVR32B arch revision 1)
+Dec 31 17:00:13 ngw user.warn kernel: CPU: MMU configuration: Shared TLB
+Dec 31 17:00:13 ngw user.warn kernel: CPU: features: dsp simd ocd perfctr java
+Dec 31 17:00:13 ngw user.warn kernel: CPU: Running at 140.000 MHz
+Dec 31 17:00:13 ngw user.info kernel: Physical memory:
+Dec 31 17:00:13 ngw user.warn kernel:   10000000-11ffffff
+Dec 31 17:00:13 ngw user.info kernel: Reserved memory:
+Dec 31 17:00:13 ngw user.warn kernel:   10000000-101c87eb: Kernel code
+Dec 31 17:00:13 ngw user.warn kernel:   101c87ec-1028061f: Kernel data
+Dec 31 17:00:13 ngw user.info kernel: Hierarchical RCU implementation.
+Dec 31 17:00:13 ngw user.info kernel: 	RCU-based detection of stalled CPUs is disabled.
+Dec 31 17:00:13 ngw user.info kernel: 	Verbose stalled-CPUs detection is disabled.
+Dec 31 17:00:13 ngw daemon.info dnsmasq[395]: started, version 2.55 cachesize 150
+Dec 31 17:00:13 ngw daemon.warn dnsmasq[395]: overflow: 6 log entries lost
+Dec 31 17:00:13 ngw user.info kernel: NR_IRQS:288
+Dec 31 17:00:13 ngw user.info kernel: avr32_comparator: irq 0, 140.000 MHz
+Dec 31 17:00:13 ngw user.info kernel: console [ttyS0] enabled
+Dec 31 17:00:13 ngw user.info kernel: Calibrating delay using timer specific routine.. 285.99 BogoMIPS (lpj=142997)
+Dec 31 17:00:13 ngw user.info kernel: pid_max: default: 4096 minimum: 301
+Dec 31 17:00:13 ngw user.warn kernel: Mount-cache hash table entries: 512
+Dec 31 17:00:13 ngw user.info kernel: smc smc.0: Atmel Static Memory Controller at 0xfff03400
+Dec 31 17:00:13 ngw user.info kernel: NET: Registered protocol family 16
+Dec 31 17:00:13 ngw user.debug kernel: pio0: base 0xffe02800, irq 13 chains 96..127
+Dec 31 17:00:13 ngw user.debug kernel: pio1: base 0xffe02c00, irq 14 chains 128..159
+Dec 31 17:00:13 ngw user.debug kernel: pio2: base 0xffe03000, irq 15 chains 160..191
+Dec 31 17:00:13 ngw user.debug kernel: pio3: base 0xffe03400, irq 16 chains 192..223
+Dec 31 17:00:13 ngw user.debug kernel: pio4: base 0xffe03800, irq 17 chains 224..255
+Dec 31 17:00:13 ngw user.info kernel: pdc pdc.0: Atmel Peripheral DMA Controller enabled
+Dec 31 17:00:13 ngw user.info kernel: at32_eic at32_eic.0: External Interrupt Controller at 0xfff00100, IRQ 19
+Dec 31 17:00:13 ngw user.info kernel: at32_eic at32_eic.0: Handling 4 external IRQs, starting with IRQ 64
+Dec 31 17:00:13 ngw user.warn kernel: AVR32 AP Power Management enabled
+Dec 31 17:00:13 ngw user.debug kernel: tcb_clksrc: tc0 at 8.250 MHz
+Dec 31 17:00:13 ngw user.warn kernel: bio: create slab <bio-0> at 0
+Dec 31 17:00:13 ngw user.info kernel: Switching to clocksource tcb_clksrc
+Dec 31 17:00:13 ngw user.info kernel: NET: Registered protocol family 2
+Dec 31 17:00:13 ngw user.info kernel: IP route cache hash table entries: 1024 (order: 0, 4096 bytes)
+Dec 31 17:00:13 ngw user.info kernel: TCP established hash table entries: 1024 (order: 1, 8192 bytes)
+Dec 31 17:00:13 ngw user.info kernel: TCP bind hash table entries: 1024 (order: 0, 4096 bytes)
+Dec 31 17:00:13 ngw user.info kernel: TCP: Hash tables configured (established 1024 bind 1024)
+Dec 31 17:00:13 ngw user.info kernel: TCP reno registered
+Dec 31 17:00:13 ngw user.info kernel: NET: Registered protocol family 1
+Dec 31 17:00:13 ngw user.info kernel: RPC: Registered udp transport module.
+Dec 31 17:00:13 ngw user.info kernel: RPC: Registered tcp transport module.
+Dec 31 17:00:13 ngw user.info kernel: RPC: Registered tcp NFSv4.1 backchannel transport module.
+Dec 31 17:00:13 ngw user.info kernel: JFFS2 version 2.2. (NAND) © 2001-2006 Red Hat, Inc.
+Dec 31 17:00:13 ngw user.info kernel: msgmni has been set to 58
+Dec 31 17:00:13 ngw user.info kernel: alg: No test for stdrng (krng)
+Dec 31 17:00:13 ngw user.info kernel: io scheduler noop registered
+Dec 31 17:00:13 ngw user.info kernel: io scheduler cfq registered (default)
+Dec 31 17:00:13 ngw user.info kernel: atmel_usart.0: ttyS0 at MMIO 0xffe01000 (irq = 7) is a ATMEL_SERIAL
+Dec 31 17:00:13 ngw user.notice kernel: physmap platform flash device: 00800000 at 00000000
+Dec 31 17:00:13 ngw user.info kernel: physmap-flash.0: Found 1 x16 devices at 0x0 in 16-bit bank
+Dec 31 17:00:13 ngw user.info kernel: Amd/Fujitsu Extended Query Table at 0x0041
+Dec 31 17:00:13 ngw user.notice kernel: number of CFI chips: 1
+Dec 31 17:00:13 ngw user.notice kernel: RedBoot partition parsing not available
+Dec 31 17:00:13 ngw user.notice kernel: Using physmap partition information
+Dec 31 17:00:14 ngw user.notice kernel: Creating 3 MTD partitions on "physmap-flash.0":
+Dec 31 17:00:14 ngw user.notice kernel: 0x000000000000-0x000000020000 : "u-boot"
+Dec 31 17:00:14 ngw user.notice kernel: 0x000000020000-0x0000007f0000 : "root"
+Dec 31 17:00:14 ngw user.notice kernel: 0x0000007f0000-0x000000800000 : "env"
+Dec 31 17:00:14 ngw user.info kernel: atmel_spi atmel_spi.0: Atmel SPI Controller at 0xffe00000 (irq 3)
+Dec 31 17:00:14 ngw user.info kernel: mtd_dataflash spi0.0: AT45DB642x (8448 KBytes) pagesize 1056 bytes (OTP)
+Dec 31 17:00:14 ngw user.info kernel: MACB_mii_bus: probed
+Dec 31 17:00:14 ngw user.info kernel: eth0: Atmel MACB at 0xfff01800 irq 25 (00:11:22:33:44:55)
+Dec 31 17:00:14 ngw user.info kernel: eth0: attached PHY driver [Generic PHY] (mii_bus:phy_addr=0:01, irq=-1)
+Dec 31 17:00:14 ngw user.info kernel: macb macb.1: invalid hw address, using random
+Dec 31 17:00:14 ngw user.info kernel: MACB_mii_bus: probed
+Dec 31 17:00:14 ngw user.info kernel: NET: Registered protocol family 10
+Dec 31 17:00:14 ngw user.info kernel: IPv6 over IPv4 tunneling driver
+Dec 31 17:00:14 ngw user.info kernel: NET: Registered protocol family 17
+Dec 31 17:00:14 ngw user.info kernel: NET: Registered protocol family 15
+Dec 31 17:00:14 ngw user.warn kernel: cpufreq: AT32AP CPU frequency driver
+Dec 31 17:00:14 ngw user.info kernel: at32ap700x_rtc at32ap700x_rtc.0: setting system clock to 1970-01-01 00:00:00 UTC (0)
+Dec 31 17:00:14 ngw user.info kernel: atmel_mci atmel_mci.0: Atmel MCI controller at 0xfff02400 irq 28, 1 slots
+Dec 31 17:00:14 ngw user.notice kernel: Sending DHCP requests ., OK
+Dec 31 17:00:14 ngw user.warn kernel: IP-Config: Got DHCP answer from 192.168.0.1, my address is 192.168.0.16
+Dec 31 17:00:14 ngw user.warn kernel: IP-Config: Complete:
+Dec 31 17:00:14 ngw user.warn kernel:      device=eth0, addr=192.168.0.16, mask=255.255.255.0, gw=192.168.0.1,
+Dec 31 17:00:14 ngw user.warn kernel:      host=192.168.0.16, domain=example.org, nis-domain=(none),
+Dec 31 17:00:14 ngw user.warn kernel:      bootserver=192.168.0.1, rootserver=192.168.0.1, rootpath=
+Dec 31 17:00:14 ngw user.notice kernel: Looking up port of RPC 100003/2 on 192.168.0.1
+Dec 31 17:00:14 ngw user.notice kernel: Looking up port of RPC 100005/1 on 192.168.0.1
+Dec 31 17:00:14 ngw user.warn kernel: VFS: Mounted root (nfs filesystem) on device 0:13.
+Dec 31 17:00:14 ngw user.info kernel: Freeing init memory: 84K (90000000 - 90015000)
+Dec 31 17:00:14 ngw user.info kernel: eth0: link up (100/Full)
+Dec 31 17:00:14 ngw user.info kernel: usb0: MAC a2:9e:e1:56:9c:f4
+Dec 31 17:00:14 ngw user.info kernel: usb0: HOST MAC 0a:9c:46:a8:42:2d
+Dec 31 17:00:14 ngw user.info kernel: g_cdc gadget: CDC Composite Gadget, version: King Kamehameha Day 2008
+Dec 31 17:00:14 ngw user.info kernel: g_cdc gadget: g_cdc ready
+Dec 31 17:00:14 ngw user.info kernel: ADDRCONF(NETDEV_UP): eth1: link is not ready
+Dec 31 17:00:14 ngw user.info kernel: ADDRCONF(NETDEV_UP): usb0: link is not ready
+Dec 31 17:00:14 ngw user.info kernel: ip_tables: (C) 2000-2006 Netfilter Core Team
+Dec 31 17:00:14 ngw user.info kernel: nf_conntrack version 0.5.0 (468 buckets, 1872 max)
+Dec 31 17:00:14 ngw user.debug kernel: eth0: no IPv6 routers present
+Dec 31 17:00:14 ngw user.info kernel: warning: `proftpd' uses 32-bit capabilities (legacy support in use)
+Dec 31 17:00:25 ngw user.info login[396]: root login on 'ttyS0'
+Dec 31 17:00:46 ngw user.info kernel: Creating proc entry...
+Dec 31 17:01:09 ngw user.info kernel: Removed /proc/counter.
+Dec 31 17:04:00 ngw user.err kernel: INFO: task rmmod:412 blocked for more than 120 seconds.
+Dec 31 17:04:00 ngw user.err kernel: "echo 0 > /proc/sys/kernel/hung_task_timeout_secs" disables this message.
+Dec 31 17:04:00 ngw user.info kernel: rmmod         D 901c791a     0   412    396 0x80000002
+Dec 31 17:04:00 ngw user.warn kernel: Stack: (0x91e21e54 to 0x91e22000)
+Dec 31 17:04:00 ngw user.warn kernel: 1e40:                                              91e20008 901c7a8c 901c7a8c 
+Dec 31 17:04:00 ngw user.warn kernel: 1e60: 91e21ea0 7fffffff 91d02000 7fa19e9e 91e20000 7fffffff 91e23fd0 00000002 
+Dec 31 17:04:00 ngw user.warn kernel: 1e80: 90251150 91d03420 7fa19e9e 9001d716 91e21eb0 91d0344c 91d02000 9001d720 
+Dec 31 17:04:00 ngw user.warn kernel: 1ea0: 901c7686 91e21ed8 ffffe000 91d02000 7fa19e9e 91e20000 7fffffff 91e23fd0 
+Dec 31 17:04:00 ngw user.warn kernel: 1ec0: 00000002 00000001 91d02000 9001cb34 91e23fd4 91e23fd4 901c773a 91e21efc 
+Dec 31 17:04:00 ngw user.warn kernel: 1ee0: 91d03428 91d03420 7fa19e9e 91e23fd0 91e21f48 80000000 91e20000 9002d296 
+Dec 31 17:04:00 ngw user.warn kernel: 1f00: 91e21f10 91d03428 91d03420 7fa19e9e c097106a 91e21f34 00000000 c097113c 
+Dec 31 17:04:00 ngw user.warn kernel: 1f20: 7fa19e9e 00000880 91e21f48 80000000 91e20000 90038efa 91e21f94 00000000 
+Dec 31 17:04:00 ngw user.warn kernel: 1f40: c097113c 7fa19e9e 636f756e 74657200 90251150 00000000 91d0202c 91d02160 
+Dec 31 17:04:00 ngw user.warn kernel: 1f60: 80000004 91e20000 901c7840 91e21f94 90251150 0000082a 00000000 91d02000 
+Dec 31 17:04:00 ngw user.warn kernel: 1f80: 91d02100 c097113c 00000880 91e21f90 00000000 90015132 00000000 2ab01f58 
+Dec 31 17:04:00 ngw user.warn kernel: 1fa0: 00000002 7fa19e9e 00000000 00000000 80000000 91e20000 00000001 2aacb54a 
+Dec 31 17:04:00 ngw user.warn kernel: 1fc0: 0000bbd0 7fa19ab4 7fa19e9e 00000880 2ab07714 0000004b 00000074 00072008 
+Dec 31 17:04:00 ngw user.warn kernel: 1fe0: 2ab01f58 00000002 7fa19e9e 00000000 00000000 00000001 000052e0 7fa19e9e 
+Dec 31 17:04:00 ngw user.warn kernel: Call trace:
+Dec 31 17:04:00 ngw user.warn kernel:  [<901c7a8c>] schedule_timeout+0x10/0x11c
+Dec 31 17:04:00 ngw user.warn kernel:  [<901c7686>] wait_for_common+0x86/0xd8
+Dec 31 17:04:00 ngw user.warn kernel:  [<901c773a>] wait_for_completion+0xa/0x10
+Dec 31 17:04:00 ngw user.warn kernel:  [<9002d296>] kthread_stop+0x32/0x50
+Dec 31 17:04:00 ngw user.warn kernel:  [<c097106a>] counter_cleanup+0x1e/0x44 [counter]
+Dec 31 17:04:00 ngw user.warn kernel:  [<90038efa>] sys_delete_module+0x11e/0x168
+Dec 31 17:04:00 ngw user.warn kernel:  [<90015132>] syscall_return+0x0/0x12
+Dec 31 17:00:14 ngw syslog.info syslogd started: BusyBox v1.17.1
+Dec 31 17:00:14 ngw user.notice kernel: klogd started: BusyBox v1.17.1 (2018-10-15 15:01:46 CEST)
+Dec 31 17:00:14 ngw user.notice kernel: Linux version 2.6.35.4 (student@Sanntid) (gcc version 4.2.4-atmel.1.1.3.avr32linux.1) #1 Mon Oct 15 15:07:41 CEST 2018
+Dec 31 17:00:14 ngw user.warn kernel: CPU: AT32AP700x chip revision C
+Dec 31 17:00:14 ngw user.warn kernel: CPU: AP7 [01] core revision 0 (AVR32B arch revision 1)
+Dec 31 17:00:14 ngw user.warn kernel: CPU: MMU configuration: Shared TLB
+Dec 31 17:00:14 ngw user.warn kernel: CPU: features: dsp simd ocd perfctr java
+Dec 31 17:00:14 ngw user.warn kernel: CPU: Running at 140.000 MHz
+Dec 31 17:00:14 ngw user.info kernel: Physical memory:
+Dec 31 17:00:14 ngw user.warn kernel:   10000000-11ffffff
+Dec 31 17:00:14 ngw user.info kernel: Reserved memory:
+Dec 31 17:00:14 ngw user.warn kernel:   10000000-101c87eb: Kernel code
+Dec 31 17:00:14 ngw user.warn kernel:   101c87ec-1028061f: Kernel data
+Dec 31 17:00:14 ngw user.info kernel: Hierarchical RCU implementation.
+Dec 31 17:00:14 ngw user.info kernel: 	RCU-based detection of stalled CPUs is disabled.
+Dec 31 17:00:14 ngw user.info kernel: 	Verbose stalled-CPUs detection is disabled.
+Dec 31 17:00:14 ngw user.info kernel: NR_IRQS:288
+Dec 31 17:00:14 ngw user.info kernel: avr32_comparator: irq 0, 140.000 MHz
+Dec 31 17:00:13 ngw daemon.info dnsmasq[395]: started, version 2.55 cachesize 150
+Dec 31 17:00:14 ngw user.info kernel: console [ttyS0] enabled
+Dec 31 17:00:14 ngw user.info kernel: Calibrating delay using timer specific routine.. 285.99 BogoMIPS (lpj=142995)
+Dec 31 17:00:14 ngw user.info kernel: pid_max: default: 4096 minimum: 301
+Dec 31 17:00:14 ngw user.warn kernel: Mount-cache hash table entries: 512
+Dec 31 17:00:14 ngw user.info kernel: smc smc.0: Atmel Static Memory Controller at 0xfff03400
+Dec 31 17:00:14 ngw daemon.warn dnsmasq[395]: overflow: 6 log entries lost
+Dec 31 17:00:14 ngw user.info kernel: NET: Registered protocol family 16
+Dec 31 17:00:14 ngw user.debug kernel: pio0: base 0xffe02800, irq 13 chains 96..127
+Dec 31 17:00:14 ngw user.debug kernel: pio1: base 0xffe02c00, irq 14 chains 128..159
+Dec 31 17:00:14 ngw user.debug kernel: pio2: base 0xffe03000, irq 15 chains 160..191
+Dec 31 17:00:14 ngw user.debug kernel: pio3: base 0xffe03400, irq 16 chains 192..223
+Dec 31 17:00:14 ngw user.debug kernel: pio4: base 0xffe03800, irq 17 chains 224..255
+Dec 31 17:00:14 ngw user.info kernel: pdc pdc.0: Atmel Peripheral DMA Controller enabled
+Dec 31 17:00:14 ngw user.info kernel: at32_eic at32_eic.0: External Interrupt Controller at 0xfff00100, IRQ 19
+Dec 31 17:00:14 ngw user.info kernel: at32_eic at32_eic.0: Handling 4 external IRQs, starting with IRQ 64
+Dec 31 17:00:14 ngw user.warn kernel: AVR32 AP Power Management enabled
+Dec 31 17:00:14 ngw user.debug kernel: tcb_clksrc: tc0 at 8.250 MHz
+Dec 31 17:00:14 ngw user.warn kernel: bio: create slab <bio-0> at 0
+Dec 31 17:00:14 ngw user.info kernel: Switching to clocksource tcb_clksrc
+Dec 31 17:00:14 ngw user.info kernel: NET: Registered protocol family 2
+Dec 31 17:00:14 ngw user.info kernel: IP route cache hash table entries: 1024 (order: 0, 4096 bytes)
+Dec 31 17:00:14 ngw user.info kernel: TCP established hash table entries: 1024 (order: 1, 8192 bytes)
+Dec 31 17:00:14 ngw user.info kernel: TCP bind hash table entries: 1024 (order: 0, 4096 bytes)
+Dec 31 17:00:14 ngw user.info kernel: TCP: Hash tables configured (established 1024 bind 1024)
+Dec 31 17:00:14 ngw user.info kernel: TCP reno registered
+Dec 31 17:00:14 ngw user.info kernel: NET: Registered protocol family 1
+Dec 31 17:00:14 ngw user.info kernel: RPC: Registered udp transport module.
+Dec 31 17:00:14 ngw user.info kernel: RPC: Registered tcp transport module.
+Dec 31 17:00:14 ngw user.info kernel: RPC: Registered tcp NFSv4.1 backchannel transport module.
+Dec 31 17:00:14 ngw user.info kernel: JFFS2 version 2.2. (NAND) © 2001-2006 Red Hat, Inc.
+Dec 31 17:00:14 ngw user.info kernel: msgmni has been set to 58
+Dec 31 17:00:14 ngw user.info kernel: alg: No test for stdrng (krng)
+Dec 31 17:00:14 ngw user.info kernel: io scheduler noop registered
+Dec 31 17:00:14 ngw user.info kernel: io scheduler cfq registered (default)
+Dec 31 17:00:14 ngw user.info kernel: atmel_usart.0: ttyS0 at MMIO 0xffe01000 (irq = 7) is a ATMEL_SERIAL
+Dec 31 17:00:14 ngw user.notice kernel: physmap platform flash device: 00800000 at 00000000
+Dec 31 17:00:14 ngw user.info kernel: physmap-flash.0: Found 1 x16 devices at 0x0 in 16-bit bank
+Dec 31 17:00:14 ngw user.info kernel: Amd/Fujitsu Extended Query Table at 0x0041
+Dec 31 17:00:14 ngw user.notice kernel: number of CFI chips: 1
+Dec 31 17:00:14 ngw user.notice kernel: RedBoot partition parsing not available
+Dec 31 17:00:14 ngw user.notice kernel: Using physmap partition information
+Dec 31 17:00:14 ngw user.notice kernel: Creating 3 MTD partitions on "physmap-flash.0":
+Dec 31 17:00:14 ngw user.notice kernel: 0x000000000000-0x000000020000 : "u-boot"
+Dec 31 17:00:14 ngw user.notice kernel: 0x000000020000-0x0000007f0000 : "root"
+Dec 31 17:00:14 ngw user.notice kernel: 0x0000007f0000-0x000000800000 : "env"
+Dec 31 17:00:14 ngw user.info kernel: atmel_spi atmel_spi.0: Atmel SPI Controller at 0xffe00000 (irq 3)
+Dec 31 17:00:14 ngw user.info kernel: mtd_dataflash spi0.0: AT45DB642x (8448 KBytes) pagesize 1056 bytes (OTP)
+Dec 31 17:00:14 ngw user.info kernel: MACB_mii_bus: probed
+Dec 31 17:00:14 ngw user.info kernel: eth0: Atmel MACB at 0xfff01800 irq 25 (00:11:22:33:44:55)
+Dec 31 17:00:14 ngw user.info kernel: eth0: attached PHY driver [Generic PHY] (mii_bus:phy_addr=0:01, irq=-1)
+Dec 31 17:00:14 ngw user.info kernel: macb macb.1: invalid hw address, using random
+Dec 31 17:00:14 ngw user.info kernel: MACB_mii_bus: probed
+Dec 31 17:00:14 ngw user.info kernel: eth1: Atmel MACB at 0xfff01c00 irq 26 (82:c6:5e:f9:82:3f)
+Dec 31 17:00:14 ngw user.info kernel: eth1: attached PHY driver [Generic PHY] (mii_bus:phy_addr=1:03, irq=-1)
+Dec 31 17:00:14 ngw user.info kernel: atmel_usba_udc atmel_usba_udc.0: MMIO registers at 0xfff03000 mapped at fff03000
+Dec 31 17:00:14 ngw user.info kernel: atmel_usba_udc atmel_usba_udc.0: FIFO at 0xff300000 mapped at ff300000
+Dec 31 17:00:14 ngw user.info kernel: at32ap700x_rtc at32ap700x_rtc.0: rtc core: registered at32ap700x_rtc as rtc0
+Dec 31 17:00:14 ngw user.info kernel: at32ap700x_rtc at32ap700x_rtc.0: Atmel RTC for AT32AP700x at fff00080 irq 21
+Dec 31 17:00:14 ngw user.info kernel: at32_wdt at32_wdt.0: AT32AP700X WDT at 0xfff000b0, timeout 2 sec (nowayout=0)
+Dec 31 17:00:14 ngw user.debug kernel: Registered led device: sys
+Dec 31 17:00:14 ngw user.debug kernel: Registered led device: a
+Dec 31 17:00:14 ngw user.debug kernel: Registered led device: b
+Dec 31 17:00:14 ngw user.info kernel: dw_dmac.0: DesignWare DMA Controller, 3 channels
+Dec 31 17:00:14 ngw user.info kernel: TCP cubic registered
+Dec 31 17:00:14 ngw user.info kernel: Initializing XFRM netlink socket
+Dec 31 17:00:14 ngw user.info kernel: NET: Registered protocol family 10
+Dec 31 17:00:14 ngw user.info kernel: IPv6 over IPv4 tunneling driver
+Dec 31 17:00:14 ngw user.info kernel: NET: Registered protocol family 17
+Dec 31 17:00:14 ngw user.info kernel: NET: Registered protocol family 15
+Dec 31 17:00:14 ngw user.warn kernel: cpufreq: AT32AP CPU frequency driver
+Dec 31 17:00:14 ngw user.info kernel: at32ap700x_rtc at32ap700x_rtc.0: setting system clock to 1970-01-01 00:00:00 UTC (0)
+Dec 31 17:00:14 ngw user.info kernel: atmel_mci atmel_mci.0: Atmel MCI controller at 0xfff02400 irq 28, 1 slots
+Dec 31 17:00:14 ngw user.notice kernel: Sending DHCP requests ., OK
+Dec 31 17:00:14 ngw user.warn kernel: IP-Config: Got DHCP answer from 192.168.0.1, my address is 192.168.0.16
+Dec 31 17:00:14 ngw user.warn kernel: IP-Config: Complete:
+Dec 31 17:00:14 ngw user.warn kernel:      device=eth0, addr=192.168.0.16, mask=255.255.255.0, gw=192.168.0.1,
+Dec 31 17:00:14 ngw user.warn kernel:      host=192.168.0.16, domain=example.org, nis-domain=(none),
+Dec 31 17:00:14 ngw user.warn kernel:      bootserver=192.168.0.1, rootserver=192.168.0.1, rootpath=
+Dec 31 17:00:14 ngw user.notice kernel: Looking up port of RPC 100003/2 on 192.168.0.1
+Dec 31 17:00:14 ngw user.notice kernel: Looking up port of RPC 100005/1 on 192.168.0.1
+Dec 31 17:00:14 ngw user.warn kernel: VFS: Mounted root (nfs filesystem) on device 0:13.
+Dec 31 17:00:14 ngw user.info kernel: Freeing init memory: 84K (90000000 - 90015000)
+Dec 31 17:00:14 ngw user.info kernel: eth0: link up (100/Full)
+Dec 31 17:00:14 ngw user.info kernel: usb0: MAC a2:9e:e1:56:9c:f4
+Dec 31 17:00:14 ngw user.info kernel: usb0: HOST MAC 0a:9c:46:a8:42:2d
+Dec 31 17:00:14 ngw user.info kernel: g_cdc gadget: CDC Composite Gadget, version: King Kamehameha Day 2008
+Dec 31 17:00:14 ngw user.info kernel: g_cdc gadget: g_cdc ready
+Dec 31 17:00:14 ngw user.info kernel: ADDRCONF(NETDEV_UP): eth1: link is not ready
+Dec 31 17:00:14 ngw user.info kernel: ADDRCONF(NETDEV_UP): usb0: link is not ready
+Dec 31 17:00:14 ngw user.info kernel: ip_tables: (C) 2000-2006 Netfilter Core Team
+Dec 31 17:00:14 ngw user.info kernel: nf_conntrack version 0.5.0 (468 buckets, 1872 max)
+Dec 31 17:00:14 ngw user.debug kernel: eth0: no IPv6 routers present
+Dec 31 17:00:14 ngw user.info kernel: warning: `proftpd' uses 32-bit capabilities (legacy support in use)
+Dec 31 17:01:20 ngw user.info login[396]: root login on 'ttyS0'
+Dec 31 17:01:40 ngw user.info kernel: Creating proc entry...
+Dec 31 17:02:09 ngw user.info kernel: Removed /proc/counter.
+Dec 31 17:02:09 ngw user.info kernel: thread stopping
+Dec 31 17:02:09 ngw user.info kernel: Stopped kthread. Exiting...
+Dec 31 17:02:47 ngw user.info kernel: Creating proc entry...
+Dec 31 17:02:53 ngw user.info kernel: Removed /proc/counter.
+Dec 31 17:02:53 ngw user.info kernel: thread stopping
+Dec 31 17:02:53 ngw user.info kernel: Stopped kthread. Exiting...
