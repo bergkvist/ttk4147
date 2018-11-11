@@ -6,12 +6,12 @@ static volatile float integral = 0;
 
 float controller_pid (float error) {
     float derivative;
-    float u;
+    float control_signal;
 
     integral += error * PERIOD_S;
     derivative = (error - previous_error) / PERIOD_S;
-    u = (K_P * error) + (K_I * integral) + (K_D * derivative);
+    control_signal = (K_P * error) + (K_I * integral) + (K_D * derivative);
 
     previous_error = error;
-	return u;
+    return control_signal;
 }
