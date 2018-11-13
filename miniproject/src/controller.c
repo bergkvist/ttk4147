@@ -1,6 +1,8 @@
 #include "controller.h"
 #include "config.h"
 
+#define PERIOD_S (PERIOD_MS * 1e-3)
+
 static volatile float previous_error = 0;
 static volatile float integral = 0;
 

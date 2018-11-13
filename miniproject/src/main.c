@@ -4,27 +4,23 @@
 #include "controller.h"
 #include "config.h"
 
-int main() {
-    const float y_ref = 0;
+#define SECOND (1000 / PERIOD_MS)
 
-    pthread_t comm_receiver_handle;
-    pthread_t comm_requester_handle;
+int main() {
 
     communication_init();
-    pthread_create(&comm_receiver_handle, NULL, communication_receiver_thread, NULL);
-    pthread_create(&comm_requester_handle, NULL, communication_requester_thread, NULL);
 
-    unsigned int i;
-    for (i = 0; i < 2 / PERIOD_S; i++) {
-        /* Run for ~2 seconds */
+    unsigned int t;
+    for (t = 0; t < 2 * SECOND; t++) {
+        // Reference starts at 1, and changes to 0 after 1 second
+        const float y_reference = (t < 1 * SECOND);  // I know, kind of hacky
         const float y = communication_await_y();
-        const float u = controller_pid(y_ref - y);
+        const float u = controller_pid(y_reference - y);
         communication_send_u(u);
     }
-    
-    pthread_cancel(comm_receiver_handle);
-    pthread_cancel(comm_requester_handle);
+
     communication_cleanup();
 
-    printf("Finished successfully!\n");
+    printf("Finished successfully! Exiting...\n");
+    return 0;
 }

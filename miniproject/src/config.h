@@ -13,9 +13,5 @@ This file contains global constants that can be accessed anywhere this header is
 #define K_I 1e3  // [s^-1]
 #define K_D 1e-2 // [s]
 
-// The period in milliseconds. Used indirectly by both controller.c and communication.c:
-#define PERIOD_MS 3
-
-// These are nice to have:
-#define PERIOD_S (PERIOD_MS * 1e-3)
-#define PERIOD_US (PERIOD_MS * 1e3)
+// The controller period in milliseconds. (1 ms will cause some weird instability)
+#define PERIOD_MS 2
