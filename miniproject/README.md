@@ -11,7 +11,7 @@ Note that in order for the Makefile to work, the location of the executable `avr
 ## Design decisions
 ### Threads
 We decided to use two pthreads, in addition to the parent thread. The two threads never interract directly with each other.
-(Only indirectly). They are both found inside of the communication module.
+(Only indirectly). Giving them separate responsibilites that don't overlap makes them more independent of each other. They are both found inside of the communication module.
 
 * `receiver_thread`
   - Pick up `GET_ACK` messages (receiving the y-values).
