@@ -22,6 +22,8 @@ We decided to use two pthreads, in addition to the parent thread. The two thread
 The main function loop then simply waits for the next y-value, 
 supplies the reference error to the controller before sending the actuation u back to the server.
 
+IO is generally slow, especially over a network, which is why these tasks should not block other things from executing. You might also be able to send and receive data at the same time - which is why sending and receiving are given each their their own thread, while the parent thread controls these, as well as doing the computational work required.
+
 ### Controller
 A PID controller was chosen, with the suggested controller parameters. (Kp = 20, Ki = 1000, Kd = 0.01). You can find these constants (among with other constants) in `./src/config.h`. 
 
@@ -41,15 +43,16 @@ Notice how the controller is not able to keep up with everything it needs to do 
 Notice how everything just works for a period of 2 ms. This is likely rather close to the minimum period - and is in that sense optimal.
 ![img](results/plot5_2ms.png)
 #### Period: 3 ms
-Slightly slower and with more overswing than when using a period of 2 ms.
+A slightly more chaotic overswing than when using a period of 2 ms.
 ![img](results/plot5_3ms.png)
 #### Period: 5 ms
-An even more pronounced overswing than 3 ms, and the reference takes more time to reach.
+An even more pronounced overswing than 3 ms.
 ![img](results/plot5_5ms.png)
 #### Period: 10 ms
-This is chaotic, and the controller is in no way able to reach the reference.
+This is chaotic, and the controller is not able to reach the reference.
 ![img](results/plot5_10ms.png)
 
 ## Results [plot4]
 #### Period: 2 ms
+This is identical to the 2 ms version of plot5, except it doesn't have the histogram for SIGNAL response times. The only reason this is included is because the assignement demanded it.
 ![img](results/plot4_2ms.png)
