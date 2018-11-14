@@ -44,6 +44,9 @@ As can be seen in pretty much all of the plot5-plots - the signal response times
 
 It is not obvious from the plots that the controller period affects the signal response times. If it was affected, one would expect a higher controller frequency to worsen signal response times. For some reason, the plot with a 1 ms period seems to have the best signal response times.
 
+#### Differences when responding to `SIGNAL` (as compared to not doing it)
+From the results/plot4 at the bottom of the document - you can see that responding to `SIGNAL`s will slighly worsen the "Controller step time". The most significant difference, however, is that the standard deviation in both "Period time" and "Controller step time" increase. Since the NGW100 has more things to do, it becomes less certain when it will perform which task - and how quickly it will be able to complete it (since it might switch tasks).
+
 ### Miscellaneous
 One thing to note about all the plots, is that the mean measured period time is less than the specified period. This makes no sense whatsoever, since we know that it takes 2 seconds overall to run, and the numer of iterations is exactly 1000 (for a period of 2 ms). The mean should clearly then be 2 / 1000 = 2 ms.
 
