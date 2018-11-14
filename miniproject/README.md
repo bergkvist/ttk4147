@@ -39,6 +39,11 @@ A constant period was assumed by the controller, in spite of the period not actu
 ### Choice of period
 Some different periods were tested, all from 1 ms to 10 ms. At first, this was entirely experimental - to see how fast/efficient the system really were. But based on the results, it seemed that 2 ms provided the best results among the periods that were tested.
 
+### Signal acknowledgements
+As can be seen in pretty much all of the plot5-plots - the signal response times tend to stay under 2 ms. 
+
+It is not obvious from the plots that the controller period affects the signal response times. If it was affected, one would expect a higher controller frequency to worsen signal response times. For some reason, the plot with a 1 ms period seems to have the best signal response times.
+
 ### Miscellaneous
 One thing to note about all the plots, is that the mean measured period time is less than the specified period. This makes no sense whatsoever, since we know that it takes 2 seconds overall to run, and the numer of iterations is exactly 1000 (for a period of 2 ms). The mean should clearly then be 2 / 1000 = 2 ms.
 
@@ -47,7 +52,7 @@ One thing to note about all the plots, is that the mean measured period time is 
 Notice how the controller is not able to keep up with everything it needs to do here. The SET-responses are delayed by several periods, and the observed state is chaotic (although it still manages to reach the reference somehow). Perhaps the most clear sign, is that in order to run everything, it uses almost twice as much time as is available. Maybe this is a hint that twice the period will be close to perfect.
 ![img](results/plot5_1ms.png)
 #### Period: 2 ms
-Notice how everything just works for a period of 2 ms. This is likely rather close to the minimum period - and is in that sense optimal.
+Notice how everything just works for a period of 2 ms. This is likely rather close to the minimum period - and is in that sense optimal. On average, the server will receive a control signal (u) before sending out a new observed state (y), which is desirable, because it means the control-signal received corresponds to the most recent observed state.
 ![img](results/plot5_2ms.png)
 #### Period: 3 ms
 A slightly more chaotic overswing than when using a period of 2 ms.
