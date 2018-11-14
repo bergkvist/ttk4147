@@ -10,19 +10,25 @@ Note that in order for the Makefile to work, the location of the executable `avr
 
 ## Design decisions
 ### Threads
-We decided to use two pthreads, in addition to the parent thread. The two threads never interract directly with each other.
-(Only indirectly). Giving them separate responsibilites that don't overlap makes them more independent of each other. They are both found inside of the communication module.
+It is preferable that the threads have as seperate responsibilities as possible. This is because the code/thread functions will be easier to reason about, and it will be harder to make mistakes related to concurrency.
 
+There is in fact one potential race condition to be aware of, as a user of the communication module: `communication_init()` must be run before all the other exported functions. Failing to do this will cause a deadlock when running `communication_await_y()`.
+
+We decided to use two pthreads within the communication module, because it would allow for very high-level abstractions of the interface. This allows the main thread to have a minimal responsibility, being the intersection between the communication module and the controller module.
+
+* Parent thread (main function)
+  - Load/initialize communication and controller modules
+  - Receive y-values (communication), compute control-signal (controller), and send this back (communication)
+  - Will run for (2000 / PERIOD_MS) iterations, before shutting down communication/controller and exiting.
 * `receiver_thread`
   - Pick up `GET_ACK` messages (receiving the y-values).
   - Pick up and reply to `SIGNAL`-messages with `SIGNAL_ACK`.
+  - The reason for making the receiver thread was more so to provide a high-level-abstraction to the receiving of y-values. This thread also response to SIGNAL-messages with aknowledgements.
 * `requester_thread`
   - Periodically send `GET` messages to the server.
+  - The reason for making the requester_thread, is that it is a way of "guaranteeing" that messages are sent with a period that on average is equal to the defined one.
   
-The main function loop then simply waits for the next y-value, 
-supplies the reference error to the controller before sending the actuation u back to the server.
-
-IO is generally slow, especially over a network, which is why these tasks should not block other things from executing. You might also be able to send and receive data at the same time - which is why sending and receiving are given each their their own thread, while the parent thread controls these, as well as doing the computational work required.
+IO is generally slow, especially over a network, which is why these tasks should not block others from using the CPU. This is a big resason to give them their own threads.
 
 ### Controller
 A PID controller was chosen, with the suggested controller parameters. (Kp = 20, Ki = 1000, Kd = 0.01). You can find these constants (among with other constants) in `./src/config.h`. 
