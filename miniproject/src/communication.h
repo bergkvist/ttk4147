@@ -23,7 +23,7 @@ void communication_init(void);
 void communication_cleanup(void);
 
 /**
- * Halt progress (non-busy waiting) until a new y-value is received.
+ * Wait until a new y-value is received, and return it.
  */
 float communication_await_y(void);
 
