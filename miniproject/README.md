@@ -65,6 +65,10 @@ This is chaotic, and the controller is not able to reach the reference.
 ![img](results/plot5_10ms.png)
 
 ## Results [plot4]
-#### Period: 2 ms
-This is identical to the 2 ms version of plot5, except it doesn't have the histogram for SIGNAL response times. The only reason this is included is because the assignement demanded it.
-![img](results/plot4_2ms.png)
+#### Period: 2 ms (responding to `SIGNAL`)
+This is identical to the 2 ms version of plot5, except it doesn't have the histogram for SIGNAL response times. This is only included for easy comparisons with the "not responding to `SIGNAL`" plot below.
+![img](results/plot4_2ms_signal.png)
+
+#### Period: 2 ms (not responding to `SIGNAL`)
+Notice that the response times are lower, and that uncertainties/standard deviations are lower when not responding to `SIGNAL`-messages.
+![img](results/plot4_2ms_no_signal.png)
